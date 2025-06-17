@@ -64,7 +64,7 @@ const Projects = () => {
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   {project.description}
                 </p>
-                <Button className="btn-outline group w-full">
+                <Button className="border-2 border-caerre-accent text-caerre-accent hover:bg-caerre-accent hover:text-white font-medium py-3 px-8 rounded-full transition-all duration-300 group w-full">
                   {project.buttonText}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>

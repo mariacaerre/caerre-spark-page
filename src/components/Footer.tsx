@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <Button className="btn-primary text-lg">
+        <Button className="bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg">
           Quero conversar
         </Button>
 

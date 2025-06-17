@@ -103,12 +103,4 @@
   .gradient-text {
     @apply bg-gradient-to-r from-caerre-primary via-caerre-accent to-caerre-gold bg-clip-text text-transparent;
   }
-
-  .btn-primary {
-    @apply bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl;
-  }
-
-  .btn-outline {
-    @apply border-2 border-caerre-accent text-caerre-accent hover:bg-caerre-accent hover:text-white font-medium py-3 px-8 rounded-full transition-all duration-300;
-  }
 }
