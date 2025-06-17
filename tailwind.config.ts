@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,20 +62,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Cores personalizadas para Caerre&Co
+				// Cores atualizadas para Caerre&Co - mais suaves e criativas
 				caerre: {
-					primary: '#1a1a2e',
-					secondary: '#16213e',
-					accent: '#0f3460',
-					gold: '#d4af37',
-					cream: '#faf8f5',
-					sage: '#a8b8a5',
-					navy: '#1a365d'
+					primary: '#4A5568',     // Cinza-azulado suave
+					secondary: '#E2E8F0',   // Cinza claro
+					accent: '#10B981',      // Verde-menta vibrante
+					gold: '#F59E0B',        // Dourado mais suave
+					cream: '#FEFEFE',       // Branco quente
+					sage: '#A0AEC0',        // Cinza-sage
+					coral: '#FF6B6B',       // Coral alternativo
+					lavender: '#E0E7FF'     // Lavanda suave
 				}
 			},
 			fontFamily: {
 				'ubuntu': ['Ubuntu', 'sans-serif'],
-				'playfair': ['Playfair Display', 'serif'],
+				'poppins': ['Poppins', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
