@@ -75,7 +75,7 @@ export default {
 				}
 			},
 			fontFamily: {
-				'inter': ['Inter', 'sans-serif'],
+				'ubuntu': ['Ubuntu', 'sans-serif'],
 				'playfair': ['Playfair Display', 'serif'],
 			},
 			borderRadius: {
