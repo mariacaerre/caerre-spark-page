@@ -13,7 +13,7 @@ const Projects = () => {
       buttonText: "Quero saber mais",
       bgColor: "bg-white",
       borderColor: "border-caerre-primary",
-      titleColor: "text-caerre-primary"
+      titleGradient: "bg-gradient-to-r from-caerre-primary to-caerre-secondary bg-clip-text text-transparent"
     },
     {
       icon: <BookOpen className="h-8 w-8" />,
@@ -23,7 +23,7 @@ const Projects = () => {
       buttonText: "Ver cursos",
       bgColor: "bg-white",
       borderColor: "border-caerre-secondary",
-      titleColor: "text-caerre-secondary"
+      titleGradient: "bg-gradient-to-r from-caerre-secondary to-caerre-accent bg-clip-text text-transparent"
     },
     {
       icon: <Search className="h-8 w-8" />,
@@ -33,7 +33,7 @@ const Projects = () => {
       buttonText: "Ler textos",
       bgColor: "bg-white",
       borderColor: "border-caerre-accent",
-      titleColor: "text-caerre-accent"
+      titleGradient: "bg-gradient-to-r from-caerre-accent to-caerre-primary bg-clip-text text-transparent"
     }
   ];
 
@@ -64,7 +64,7 @@ const Projects = () => {
             >
               <div className="text-center">
                 <div className="text-4xl mb-4">{project.emoji}</div>
-                <h3 className={`text-2xl font-bebas ${project.titleColor} mb-4`}>
+                <h3 className={`text-2xl font-bebas ${project.titleGradient} mb-4`}>
                   {project.title}
                 </h3>
                 <p className="text-gray-700 mb-6 leading-relaxed font-ubuntu">
