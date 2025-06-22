@@ -70,7 +70,10 @@ export default {
 					dark: '#240055',        // Tom escuro
 					light: '#e6e6e6',       // Tom claro
 					accent: '#6500ee',      // Accent
-					white: '#FFFFFF'        // Branco do logo
+					white: '#FFFFFF',       // Branco do logo
+					cream: '#f8f9fa',       // Cream para backgrounds
+					sage: '#8a9a5b',        // Verde sage
+					gold: '#d4af37'         // Dourado para destaques
 				}
 			},
 			fontFamily: {

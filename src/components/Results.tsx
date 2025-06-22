@@ -4,7 +4,7 @@ import { Check } from "lucide-react";
 const Results = () => {
   const results = [
     "Aumentar sua presença e autoridade online",
-    "Melhorar sua comunicação e atrair o público certo",
+    "Melhorar sua comunicação e atrair o público certo", 
     "Vender mais com consistência e intenção",
     "Economizar tempo usando IA no seu dia a dia"
   ];
@@ -16,7 +16,7 @@ const Results = () => {
           <div className="w-12 h-12 bg-caerre-primary rounded-full flex items-center justify-center mr-4">
             <span className="text-white text-xl font-bold">📈</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-caerre-primary">
+          <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">
             Resultados possíveis
           </h2>
         </div>
@@ -25,10 +25,10 @@ const Results = () => {
           Com nossos serviços e conteúdos, você pode:
         </p>
 
-        <div className="grid gap-6 text-left max-w-3xl mx-auto">
+        <div className="grid gap-6 text-center max-w-3xl mx-auto">
           {results.map((result, index) => (
-            <div key={index} className="flex items-start space-x-4 p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex-shrink-0 w-6 h-6 bg-caerre-gold rounded-full flex items-center justify-center mt-1">
+            <div key={index} className="flex items-center justify-center space-x-4 p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex-shrink-0 w-6 h-6 bg-caerre-gold rounded-full flex items-center justify-center">
                 <Check className="h-4 w-4 text-white" />
               </div>
               <p className="text-lg text-gray-700 leading-relaxed font-medium">

@@ -27,10 +27,10 @@ const Newsletter = () => {
     <section className="py-20 px-6 bg-gradient-to-b from-caerre-primary to-caerre-secondary text-white">
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex items-center justify-center mb-8">
-          <div className="w-12 h-12 bg-caerre-gold rounded-full flex items-center justify-center mr-4">
-            <Mail className="h-6 w-6 text-white" />
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
+            <Mail className="h-6 w-6 text-caerre-primary" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-4xl md:text-5xl font-bebas">
             Newsletter / Comunidade
           </h2>
         </div>
@@ -56,7 +56,7 @@ const Newsletter = () => {
               placeholder="📝 Nome"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="bg-white/90 text-gray-900 placeholder:text-gray-600"
+              className="bg-white/90 text-gray-900 placeholder:text-gray-600 border-white/30"
               required
             />
             <Input
@@ -64,12 +64,12 @@ const Newsletter = () => {
               placeholder="📧 E-mail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-white/90 text-gray-900 placeholder:text-gray-600"
+              className="bg-white/90 text-gray-900 placeholder:text-gray-600 border-white/30"
               required
             />
             <Button 
               type="submit" 
-              className="bg-caerre-gold hover:bg-caerre-gold/90 text-caerre-primary font-semibold w-full py-3 group"
+              className="bg-white hover:bg-gray-100 text-caerre-primary font-semibold w-full py-3 group shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Assinar newsletter
               <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

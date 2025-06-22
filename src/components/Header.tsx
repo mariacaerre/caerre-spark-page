@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <section className="min-h-screen bg-caerre-primary flex items-center justify-center px-6 py-20">
+    <section className="min-h-screen bg-gradient-to-br from-caerre-primary via-caerre-secondary to-caerre-accent flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl text-center animate-fade-in">
         <div className="mb-12">
           <Logo className="w-64 mx-auto mb-8" />
@@ -23,7 +23,7 @@ const Header = () => {
         </p>
         
         <Button 
-          className="bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg group border-2 border-caerre-accent"
+          className="bg-white hover:bg-gray-100 text-caerre-primary font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg group border-2 border-white"
           onClick={() => document.getElementById('projetos')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Quero alavancar meu negócio
