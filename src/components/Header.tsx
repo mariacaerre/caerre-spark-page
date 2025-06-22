@@ -1,21 +1,26 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-caerre-cream via-white to-caerre-cream flex items-center justify-center px-6 py-20">
+    <section className="min-h-screen bg-gradient-to-br from-caerre-light via-white to-caerre-light flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl text-center animate-fade-in">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
+        <div className="mb-12">
+          <Logo className="w-64 mx-auto mb-8" />
+        </div>
+        
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bebas mb-8 leading-tight">
           <span className="gradient-text">Você tem potencial.</span>
           <br />
           <span className="text-caerre-primary">O seu negócio também.</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed font-ubuntu">
           Consultoria criativa, conteúdo autoral e educação prática em marketing, 
           inteligência artificial e comunicação — pra quem quer crescer com 
-          <span className="font-semibold text-caerre-accent"> clareza, estratégia e autenticidade</span>.
+          <span className="font-semibold text-caerre-accent creative-text"> clareza, estratégia e autenticidade</span>.
         </p>
         
         <Button 

@@ -11,7 +11,7 @@ const Projects = () => {
       title: "Caerre Lab",
       description: "Consultoria online, prática e estratégica, pra te ajudar a posicionar melhor sua marca, comunicar com clareza e aumentar seus resultados.",
       buttonText: "Quero saber mais",
-      gradient: "from-yellow-100 to-orange-100"
+      gradient: "from-caerre-light to-white"
     },
     {
       icon: <BookOpen className="h-8 w-8" />,
@@ -19,7 +19,7 @@ const Projects = () => {
       title: "Caerre Escola",
       description: "Cursos rápidos e objetivos sobre marketing, inteligência artificial e empreendedorismo — pra aplicar no dia a dia e ver resultado de verdade.",
       buttonText: "Ver cursos",
-      gradient: "from-blue-100 to-indigo-100"
+      gradient: "from-purple-100 to-caerre-light"
     },
     {
       icon: <Search className="h-8 w-8" />,
@@ -27,7 +27,7 @@ const Projects = () => {
       title: "Caerreverso",
       description: "Textos e conteúdos autorais sobre criatividade, estilo de vida e propósito — pra inspirar o lado mais humano de quem empreende.",
       buttonText: "Ler textos",
-      gradient: "from-green-100 to-emerald-100"
+      gradient: "from-caerre-secondary/20 to-caerre-light"
     }
   ];
 
@@ -39,14 +39,14 @@ const Projects = () => {
             <div className="w-12 h-12 bg-caerre-accent rounded-full flex items-center justify-center mr-4">
               <span className="text-white text-xl font-bold">🧩</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-caerre-primary">
+            <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">
               Nossos projetos
             </h2>
           </div>
           
-          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto font-ubuntu">
             Três formas de te ajudar a fazer seu negócio crescer com mais 
-            <span className="font-semibold text-caerre-accent"> intenção e resultado</span>:
+            <span className="font-semibold text-caerre-accent creative-text"> intenção e resultado</span>:
           </p>
         </div>
 
@@ -58,10 +58,10 @@ const Projects = () => {
             >
               <div className="text-center">
                 <div className="text-4xl mb-4">{project.emoji}</div>
-                <h3 className="text-2xl font-bold text-caerre-primary mb-4">
+                <h3 className="text-2xl font-bebas text-caerre-primary mb-4">
                   {project.title}
                 </h3>
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-700 mb-6 leading-relaxed font-ubuntu">
                   {project.description}
                 </p>
                 <Button className="border-2 border-caerre-accent text-caerre-accent hover:bg-caerre-accent hover:text-white font-medium py-3 px-8 rounded-full transition-all duration-300 group w-full">

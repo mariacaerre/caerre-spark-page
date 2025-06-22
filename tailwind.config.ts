@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,21 +63,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Cores atualizadas para Caerre&Co - mais suaves e criativas
+				// Paleta oficial da marca Caerre&Co
 				caerre: {
-					primary: '#4A5568',     // Cinza-azulado suave
-					secondary: '#E2E8F0',   // Cinza claro
-					accent: '#10B981',      // Verde-menta vibrante
-					gold: '#F59E0B',        // Dourado mais suave
-					cream: '#FEFEFE',       // Branco quente
-					sage: '#A0AEC0',        // Cinza-sage
-					coral: '#FF6B6B',       // Coral alternativo
-					lavender: '#E0E7FF'     // Lavanda suave
+					primary: '#3a0088',     // Cor principal da marca
+					secondary: '#5000bb',   // Secundária
+					dark: '#240055',        // Tom escuro
+					light: '#e6e6e6',       // Tom claro
+					accent: '#6500ee',      // Accent
+					white: '#FFFFFF'        // Branco do logo
 				}
 			},
 			fontFamily: {
-				'ubuntu': ['Ubuntu', 'sans-serif'],
-				'poppins': ['Poppins', 'sans-serif'],
+				// Fontes conforme guia de marca
+				'ubuntu': ['Ubuntu', 'sans-serif'],        // Corpo de texto
+				'bebas': ['Bebas Neue', 'sans-serif'],     // Títulos
+				'pacifico': ['Pacifico', 'cursive'],       // Destaques/Criativos
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

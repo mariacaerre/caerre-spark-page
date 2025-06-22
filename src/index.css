@@ -3,87 +3,87 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+/* Design system baseado no guia de marca Caerre&Co */
 
 @layer base {
   :root {
-    --background: 254 254 254;
-    --foreground: 74 85 104;
+    --background: 255 255 255;
+    --foreground: 58 0 136;
 
     --card: 255 255 255;
-    --card-foreground: 74 85 104;
+    --card-foreground: 58 0 136;
 
     --popover: 255 255 255;
-    --popover-foreground: 74 85 104;
+    --popover-foreground: 58 0 136;
 
-    --primary: 74 85 104;
-    --primary-foreground: 254 254 254;
+    --primary: 58 0 136;
+    --primary-foreground: 255 255 255;
 
-    --secondary: 226 232 240;
-    --secondary-foreground: 74 85 104;
+    --secondary: 230 230 230;
+    --secondary-foreground: 58 0 136;
 
     --muted: 248 250 252;
     --muted-foreground: 160 174 192;
 
-    --accent: 16 185 129;
-    --accent-foreground: 254 254 254;
+    --accent: 101 0 238;
+    --accent-foreground: 255 255 255;
 
     --destructive: 239 68 68;
     --destructive-foreground: 248 250 252;
 
-    --border: 226 232 240;
-    --input: 226 232 240;
-    --ring: 16 185 129;
+    --border: 230 230 230;
+    --input: 230 230 230;
+    --ring: 101 0 238;
 
     --radius: 0.75rem;
 
     --sidebar-background: 255 255 255;
-    --sidebar-foreground: 74 85 104;
-    --sidebar-primary: 74 85 104;
+    --sidebar-foreground: 58 0 136;
+    --sidebar-primary: 58 0 136;
     --sidebar-primary-foreground: 255 255 255;
     --sidebar-accent: 248 250 252;
-    --sidebar-accent-foreground: 74 85 104;
-    --sidebar-border: 226 232 240;
-    --sidebar-ring: 16 185 129;
+    --sidebar-accent-foreground: 58 0 136;
+    --sidebar-border: 230 230 230;
+    --sidebar-ring: 101 0 238;
   }
 
   .dark {
-    --background: 74 85 104;
-    --foreground: 254 254 254;
+    --background: 58 0 136;
+    --foreground: 255 255 255;
 
-    --card: 55 65 81;
-    --card-foreground: 254 254 254;
+    --card: 36 0 85;
+    --card-foreground: 255 255 255;
 
-    --popover: 55 65 81;
-    --popover-foreground: 254 254 254;
+    --popover: 36 0 85;
+    --popover-foreground: 255 255 255;
 
-    --primary: 254 254 254;
-    --primary-foreground: 74 85 104;
+    --primary: 255 255 255;
+    --primary-foreground: 58 0 136;
 
-    --secondary: 226 232 240;
-    --secondary-foreground: 74 85 104;
+    --secondary: 80 0 187;
+    --secondary-foreground: 255 255 255;
 
-    --muted: 71 85 105;
-    --muted-foreground: 148 163 184;
+    --muted: 36 0 85;
+    --muted-foreground: 230 230 230;
 
-    --accent: 16 185 129;
-    --accent-foreground: 74 85 104;
+    --accent: 101 0 238;
+    --accent-foreground: 255 255 255;
 
     --destructive: 239 68 68;
     --destructive-foreground: 248 250 252;
 
-    --border: 71 85 105;
-    --input: 71 85 105;
-    --ring: 16 185 129;
+    --border: 80 0 187;
+    --input: 80 0 187;
+    --ring: 101 0 238;
     
-    --sidebar-background: 74 85 104;
-    --sidebar-foreground: 254 254 254;
-    --sidebar-primary: 16 185 129;
-    --sidebar-primary-foreground: 74 85 104;
-    --sidebar-accent: 71 85 105;
-    --sidebar-accent-foreground: 254 254 254;
-    --sidebar-border: 71 85 105;
-    --sidebar-ring: 16 185 129;
+    --sidebar-background: 58 0 136;
+    --sidebar-foreground: 255 255 255;
+    --sidebar-primary: 101 0 238;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 36 0 85;
+    --sidebar-accent-foreground: 255 255 255;
+    --sidebar-border: 80 0 187;
+    --sidebar-ring: 101 0 238;
   }
 }
 
@@ -97,10 +97,14 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-poppins;
+    @apply font-bebas;
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-caerre-primary via-caerre-accent to-caerre-gold bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-caerre-primary via-caerre-accent to-caerre-secondary bg-clip-text text-transparent;
+  }
+
+  .creative-text {
+    @apply font-pacifico;
   }
 }
