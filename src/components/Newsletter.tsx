@@ -24,27 +24,27 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-caerre-primary to-caerre-secondary text-white">
+    <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex items-center justify-center mb-8">
-          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
-            <Mail className="h-6 w-6 text-caerre-primary" />
+          <div className="w-12 h-12 bg-caerre-primary rounded-full flex items-center justify-center mr-4">
+            <Mail className="h-6 w-6 text-white" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bebas">
+          <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">
             Newsletter / Comunidade
           </h2>
         </div>
 
-        <p className="text-xl md:text-2xl mb-8">
+        <p className="text-xl md:text-2xl mb-8 text-gray-700">
           Receba conteúdos que realmente fazem diferença.
         </p>
 
-        <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 max-w-2xl mx-auto">
-          <p className="text-lg mb-6">
+        <Card className="p-8 bg-white border-2 border-caerre-primary/20 max-w-2xl mx-auto shadow-lg">
+          <p className="text-lg mb-6 text-gray-700">
             Assine a newsletter da Caerre&Co e receba, uma vez por mês:
           </p>
           
-          <ul className="text-left space-y-2 mb-8 text-gray-200">
+          <ul className="text-left space-y-2 mb-8 text-gray-600">
             <li>– Dicas de ferramentas</li>
             <li>– Textos autorais</li>
             <li>– Novidades e convites para oficinas e vivências</li>
@@ -56,7 +56,7 @@ const Newsletter = () => {
               placeholder="📝 Nome"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="bg-white/90 text-gray-900 placeholder:text-gray-600 border-white/30"
+              className="bg-gray-50 text-gray-900 placeholder:text-gray-500 border-gray-300 focus:border-caerre-primary"
               required
             />
             <Input
@@ -64,19 +64,19 @@ const Newsletter = () => {
               placeholder="📧 E-mail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-white/90 text-gray-900 placeholder:text-gray-600 border-white/30"
+              className="bg-gray-50 text-gray-900 placeholder:text-gray-500 border-gray-300 focus:border-caerre-primary"
               required
             />
             <Button 
               type="submit" 
-              className="bg-white hover:bg-gray-100 text-caerre-primary font-semibold w-full py-3 group shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-caerre-primary hover:bg-caerre-secondary text-white font-semibold w-full py-3 group shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Assinar newsletter
               <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </form>
 
-          <p className="text-sm text-gray-300 mt-4">
+          <p className="text-sm text-gray-500 mt-4">
             📬 Envio mensal, sem spam. Só o que importa.
           </p>
         </Card>

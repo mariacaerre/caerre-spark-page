@@ -11,8 +11,9 @@ const Projects = () => {
       title: "Caerre Lab",
       description: "Consultoria online, prática e estratégica, pra te ajudar a posicionar melhor sua marca, comunicar com clareza e aumentar seus resultados.",
       buttonText: "Quero saber mais",
-      gradient: "from-caerre-accent/20 to-caerre-secondary/20",
-      borderColor: "border-caerre-accent"
+      bgColor: "bg-white",
+      borderColor: "border-caerre-primary",
+      titleColor: "text-caerre-primary"
     },
     {
       icon: <BookOpen className="h-8 w-8" />,
@@ -20,8 +21,9 @@ const Projects = () => {
       title: "Caerre Escola",
       description: "Cursos rápidos e objetivos sobre marketing, inteligência artificial e empreendedorismo — pra aplicar no dia a dia e ver resultado de verdade.",
       buttonText: "Ver cursos",
-      gradient: "from-caerre-secondary/20 to-caerre-primary/20",
-      borderColor: "border-caerre-secondary"
+      bgColor: "bg-white",
+      borderColor: "border-caerre-secondary",
+      titleColor: "text-caerre-secondary"
     },
     {
       icon: <Search className="h-8 w-8" />,
@@ -29,8 +31,9 @@ const Projects = () => {
       title: "Caerreverso", 
       description: "Textos e conteúdos autorais sobre criatividade, estilo de vida e propósito — pra inspirar o lado mais humano de quem empreende.",
       buttonText: "Ler textos",
-      gradient: "from-caerre-primary/20 to-caerre-accent/20",
-      borderColor: "border-caerre-primary"
+      bgColor: "bg-white",
+      borderColor: "border-caerre-accent",
+      titleColor: "text-caerre-accent"
     }
   ];
 
@@ -57,11 +60,11 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className={`p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 bg-gradient-to-br ${project.gradient} border-2 ${project.borderColor} hover:border-opacity-70`}
+              className={`p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 ${project.bgColor} border-3 ${project.borderColor} hover:border-opacity-70 shadow-lg`}
             >
               <div className="text-center">
                 <div className="text-4xl mb-4">{project.emoji}</div>
-                <h3 className="text-2xl font-bebas text-caerre-primary mb-4">
+                <h3 className={`text-2xl font-bebas ${project.titleColor} mb-4`}>
                   {project.title}
                 </h3>
                 <p className="text-gray-700 mb-6 leading-relaxed font-ubuntu">
