@@ -24,10 +24,10 @@ const About = () => {
             aqui é o lugar.
           </p>
           
-          <p className="text-caerre-primary font-semibold text-xl md:text-2xl creative-text">
+          <p className="text-caerre-primary font-semibold text-xl md:text-2xl">
             Trabalhamos com propósito, estratégia e identidade. 
             <br />
-            Sem fórmulas prontas. Com ferramentas que funcionam.
+            <span className="font-pacifico">Sem fórmulas prontas. Com ferramentas que funcionam.</span>
           </p>
         </div>
       </div>
