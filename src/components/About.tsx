@@ -62,7 +62,7 @@ const About = () => {
                   <img 
                     src="/lovable-uploads/ebf56697-e5fa-4caf-b161-d8ca431ad454.png" 
                     alt="Maria Caerre - Fundadora da Caerre&Co" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 {/* Elemento decorativo */}

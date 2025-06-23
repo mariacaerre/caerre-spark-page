@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Edit3, Mail, TrendingUp, Brain, Target } from "lucide-react";
@@ -20,9 +19,9 @@ const Services = () => {
       emoji: "💌",
       title: "CRM e Automação de Marketing",
       items: [
-        "Implantação e gestão de jornadas no RD Station, Bitrix24 ou Salesforce",
-        "Segmentações, fluxos automatizados e personalização com AMPscript e SQL",
-        "Estratégias de nutrição e fidelização de leads"
+        "Criação de jornadas de relacionamento personalizadas, com e-mails, fluxos e automações sob medida",
+        "Segmentação inteligente de público e mensagens no tempo certo",
+        "Estratégias de nutrição e fidelização de leads, com foco em conexão real e conversão"
       ]
     },
     {
