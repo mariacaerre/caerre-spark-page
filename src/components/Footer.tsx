@@ -13,7 +13,7 @@ const Footer = () => {
 
         <div className="flex items-center justify-center mb-8">
           <div className="w-12 h-12 bg-caerre-accent rounded-full flex items-center justify-center mr-4">
-            <MessageCircle className="h-6 w-6 text-white" />
+            <span className="text-white text-xl font-bold">📱</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bebas text-white">
             Redes e contato

@@ -43,7 +43,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">
             <div className="w-12 h-12 bg-caerre-accent rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl font-bold">🧩</span>
+              <span className="text-white text-xl font-bold">🚀</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">
               Nossos projetos
