@@ -24,7 +24,7 @@ const Header = () => {
         
         <Button 
           className="bg-white hover:bg-gray-100 text-caerre-primary font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg group border-2 border-white"
-          onClick={() => document.getElementById('projetos')?.scrollIntoView({ behavior: 'smooth' })}
+          onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Quero alavancar meu negócio
           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
