@@ -12,8 +12,8 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center justify-center mb-8">
-          <div className="w-12 h-12 bg-caerre-accent rounded-full flex items-center justify-center mr-4">
-            <span className="text-white text-xl font-bold">📱</span>
+          <div className="w-12 h-12 bg-caerre-accent/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-accent/30">
+            <span className="text-2xl">📱</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bebas text-white">
             Redes e contato

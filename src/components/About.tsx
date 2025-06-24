@@ -5,8 +5,8 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">
-            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
-              <span className="text-purple-600 text-xl font-bold">✨</span>
+            <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-white/30">
+              <span className="text-2xl">✨</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bebas text-white">
               Sobre a Caerre&Co
@@ -55,11 +55,11 @@ const About = () => {
             
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative">
-                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-white/30">
+                <div className="w-52 h-52 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl border-4 border-white/30">
                   <img 
                     src="/lovable-uploads/ebf56697-e5fa-4caf-b161-d8ca431ad454.png" 
                     alt="Maria Caerre - Fundadora da Caerre&Co" 
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-[center_20%]"
                   />
                 </div>
                 {/* Elemento decorativo */}

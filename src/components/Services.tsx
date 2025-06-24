@@ -20,9 +20,9 @@ const Services = () => {
       emoji: "💌",
       title: "CRM e Automação de Marketing",
       items: [
-        "Criação de jornadas de relacionamento personalizadas",
-        "Segmentação inteligente de público e automações sob medida",
-        "Estratégias de nutrição e fidelização de leads com foco em conexão real"
+        "Criação de jornadas de relacionamento personalizadas, com e-mails, fluxos e automações sob medida",
+        "Segmentação inteligente de público e mensagens no tempo certo",
+        "Estratégias de nutrição e fidelização de leads, com foco em conexão real e conversão"
       ]
     },
     {
@@ -62,8 +62,8 @@ const Services = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">
-            <div className="w-12 h-12 bg-caerre-secondary rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl font-bold">🛠️</span>
+            <div className="w-12 h-12 bg-caerre-secondary/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-secondary/30">
+              <span className="text-2xl">🛠️</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">
               Como podemos te ajudar na prática
@@ -84,7 +84,9 @@ const Services = () => {
               key={index} 
               className="p-6 hover:shadow-lg transition-all duration-300 bg-white border-2 border-gray-200 hover:border-caerre-primary/30"
             >
-              <div className="text-4xl mb-4 text-center">{service.emoji}</div>
+              <div className="w-16 h-16 bg-caerre-primary/10 rounded-full flex items-center justify-center text-3xl mb-4 mx-auto border border-caerre-primary/20">
+                {service.emoji}
+              </div>
               <h3 className="text-xl font-bebas text-caerre-primary mb-4 text-center">
                 {service.title}
               </h3>
