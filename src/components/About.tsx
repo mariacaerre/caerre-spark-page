@@ -1,12 +1,12 @@
 
 const About = () => {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-caerre-primary via-caerre-secondary to-caerre-dark">
+    <section className="py-20 px-6 bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">
             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
-              <span className="text-caerre-primary text-xl font-bold">✨</span>
+              <span className="text-purple-600 text-xl font-bold">✨</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bebas text-white">
               Sobre a Caerre&Co
@@ -15,20 +15,15 @@ const About = () => {
           
           <div className="space-y-6 text-lg md:text-xl text-white leading-relaxed font-ubuntu max-w-4xl mx-auto">
             <p>
-              A <span className="font-semibold text-caerre-light">Caerre&Co</span> existe pra apoiar 
-              empreendedores reais a transformarem ideias boas em negócios fortes e com presença.
+              <span className="font-semibold text-purple-200">Pequenas mudanças, grandes resultados.</span> A Caerre&Co é uma consultoria feita para empreendedores de verdade — que querem se comunicar melhor com quem realmente importa.
             </p>
             
             <p>
-              Seja você alguém começando ou já em movimento, mas sentindo que falta 
-              <span className="font-semibold text-caerre-light"> clareza, consistência ou direção</span> — 
-              aqui é o lugar.
+              Tudo com propósito, estratégia e empatia. Sem fórmulas prontas, com direcionamentos que funcionam de verdade.
             </p>
             
-            <p className="text-caerre-light font-semibold text-xl md:text-2xl">
-              Trabalhamos com propósito, estratégia e identidade. 
-              <br />
-              <span className="font-pacifico">Sem fórmulas prontas. Com ferramentas que funcionam.</span>
+            <p className="text-purple-200 font-semibold text-xl md:text-2xl">
+              <span className="font-pacifico">Seja você alguém começando ou já em movimento, aqui é o lugar certo.</span>
             </p>
           </div>
         </div>
@@ -43,22 +38,24 @@ const About = () => {
               
               <div className="space-y-4 text-white leading-relaxed">
                 <p className="text-lg">
-                  Está <span className="font-semibold text-caerre-light">Maria Caerre</span> — 
-                  jornalista, especialista em marketing digital e apaixonada por unir dados, 
+                  Está <span className="font-semibold text-purple-200">Maria Caerre</span> — 
+                  jornalista, especialista em marketing digital e apaixonada por aliar dados, 
                   sensibilidade e comunicação com propósito.
                 </p>
                 
                 <p className="text-lg">
-                  Com mais de 10 anos de experiência em conteúdo, CRM, automação e estratégias digitais, 
-                  Maria já atuou com negócios de todos os tamanhos, sempre com escuta ativa, 
-                  pensamento estratégico e um olhar humano por trás de cada entrega.
+                  É geminiana, mãe de pets e plantas, adora dirigir e tem mais de 10 anos de experiência em conteúdo, CRM, automação e estratégias digitais.
+                </p>
+                
+                <p className="text-lg">
+                  Inclusive, já atuou com negócios de todos os tamanhos - sempre com escuta ativa, ideias criativas, pensamento estratégico e um olhar humano por trás de cada desafio.
                 </p>
               </div>
             </div>
             
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative">
-                <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden shadow-xl border-4 border-white/30">
+                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-white/30">
                   <img 
                     src="/lovable-uploads/ebf56697-e5fa-4caf-b161-d8ca431ad454.png" 
                     alt="Maria Caerre - Fundadora da Caerre&Co" 

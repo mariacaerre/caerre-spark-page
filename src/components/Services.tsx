@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Edit3, Mail, TrendingUp, Brain, Target } from "lucide-react";
@@ -10,7 +11,7 @@ const Services = () => {
       title: "Criação e Otimização de Conteúdo",
       items: [
         "Textos estratégicos para blogs, redes sociais, newsletters e sites",
-        "Copywriting, storytelling e SEO com foco em conversão",
+        "Copywriting, storytelling e SEO com foco em atrair clientes certos",
         "Roteiros para vídeos, aulas e lançamentos"
       ]
     },
@@ -19,19 +20,19 @@ const Services = () => {
       emoji: "💌",
       title: "CRM e Automação de Marketing",
       items: [
-        "Criação de jornadas de relacionamento personalizadas, com e-mails, fluxos e automações sob medida",
-        "Segmentação inteligente de público e mensagens no tempo certo",
-        "Estratégias de nutrição e fidelização de leads, com foco em conexão real e conversão"
+        "Criação de jornadas de relacionamento personalizadas",
+        "Segmentação inteligente de público e automações sob medida",
+        "Estratégias de nutrição e fidelização de leads com foco em conexão real"
       ]
     },
     {
       icon: <TrendingUp className="h-8 w-8" />,
       emoji: "📈",
-      title: "Planejamento Estratégico e Consultoria",
+      title: "Planejamento Estratégico e Mentorias",
       items: [
         "Diagnóstico de marca e comunicação",
         "Posicionamento digital e planejamento de conteúdo",
-        "Mentorias individuais com foco em clareza, consistência e autonomia"
+        "Mentorias 1:1 para destravar ideias e alinhar direção"
       ]
     },
     {
@@ -39,9 +40,9 @@ const Services = () => {
       emoji: "🤖",
       title: "Inteligência Artificial aplicada ao marketing",
       items: [
-        "Ensino prático de IA para produção de conteúdo, ideias e automações",
-        "Curadoria de ferramentas úteis para pequenas empresas e autônomos",
-        "Estratégias para ganhar tempo e melhorar seus resultados com o apoio da tecnologia"
+        "Ensino prático de IA para produção de conteúdo, geração de ideias e automações",
+        "Curadoria de ferramentas úteis para facilitar sua rotina",
+        "Estratégias para ganhar tempo e melhorar resultados com tecnologia"
       ]
     },
     {
@@ -50,8 +51,8 @@ const Services = () => {
       title: "Tráfego Pago e Campanhas",
       items: [
         "Gestão de campanhas no Google Ads e Meta Ads",
-        "Criação de páginas de captura e automações de conversão",
-        "Integração entre mídia paga, CRM e e-mail marketing"
+        "Criação de páginas de captura e jornadas que incentivam a ação do público",
+        "Integração com ferramentas de CRM e e-mail marketing"
       ]
     }
   ];
@@ -65,15 +66,15 @@ const Services = () => {
               <span className="text-white text-xl font-bold">🛠️</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">
-              O que podemos fazer por você
+              Como podemos te ajudar na prática
             </h2>
           </div>
           
           <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto font-ubuntu mb-4">
-            Na Caerre&Co, unimos estratégia, conteúdo e tecnologia pra oferecer soluções sob medida para o seu momento.
+            Aqui, mergulhamos na realidade do seu negócio para encontrar soluções que melhor funcionam para você, com foco em clareza, autonomia e crescimento.
           </p>
           <p className="text-xl text-gray-700 font-ubuntu font-semibold">
-            Veja como podemos ajudar:
+            Confira algumas das frentes em que podemos atuar:
           </p>
         </div>
 
@@ -100,11 +101,8 @@ const Services = () => {
         </div>
 
         <div className="text-center">
-          <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto font-ubuntu">
-            Cada projeto é único — por isso, atuamos com escuta, estratégia e um plano que respeita seu momento e seus objetivos.
-          </p>
           <Button className="bg-caerre-primary hover:bg-caerre-secondary text-white font-medium py-4 px-8 rounded-full transition-all duration-300 group shadow-lg hover:shadow-xl text-lg">
-            Quero conversar e receber uma proposta
+            Vamos conversar
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
