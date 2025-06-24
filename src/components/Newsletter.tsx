@@ -27,7 +27,7 @@ const Newsletter = () => {
     <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex items-center justify-center mb-8">
-          <div className="w-12 h-12 bg-caerre-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-primary/30">
+          <div className="w-12 h-12 bg-caerre-primary/5 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-primary/10">
             <span className="text-2xl">💌</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">

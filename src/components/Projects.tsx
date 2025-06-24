@@ -30,7 +30,7 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">
-            <div className="w-12 h-12 bg-caerre-accent/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-accent/30">
+            <div className="w-12 h-12 bg-caerre-accent/5 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-accent/10">
               <span className="text-2xl">🚀</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">
@@ -46,7 +46,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="p-8 text-center hover:shadow-lg transition-all duration-300 bg-white border-2 border-gray-200 hover:border-caerre-primary/30">
-              <div className="w-20 h-20 bg-caerre-primary/10 rounded-full flex items-center justify-center text-4xl mb-6 mx-auto border border-caerre-primary/20">
+              <div className="w-20 h-20 bg-caerre-primary/5 rounded-full flex items-center justify-center text-4xl mb-6 mx-auto border border-caerre-primary/10">
                 {project.emoji}
               </div>
               <h3 className="text-2xl font-bebas text-caerre-primary mb-4">
