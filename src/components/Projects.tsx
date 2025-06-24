@@ -8,7 +8,7 @@ const Projects = () => {
     {
       emoji: "💡",
       title: "Caerre Lab",
-      description: "Consultoria online, prática e estratégica, para te ajudar a posicionar melhor sua marca, comunicar com clareza e aumentar seus resultados.",
+      description: "Consultoria online personalizada, prática e estratégica, para te ajudar a posicionar melhor sua marca, comunicar com clareza e aumentar seus resultados.",
       buttonText: "Quero saber mais"
     },
     {
@@ -39,7 +39,7 @@ const Projects = () => {
           </div>
           
           <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto font-ubuntu">
-            Aqui, trabalhamos com 3 soluções para te ajudar a impulsionar seu negócio com estratégia, propósito e presença:
+            Hoje, oferecemos 3 soluções para impulsionar seu negócio com estratégia, propósito e presença:
           </p>
         </div>
 

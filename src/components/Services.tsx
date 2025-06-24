@@ -61,12 +61,12 @@ const Services = () => {
               <span className="text-2xl">🛠️</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">
-              Como podemos te ajudar na prática
+              Como funciona na prática
             </h2>
           </div>
           
           <p className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto font-ubuntu">
-            Aqui, mergulhamos na realidade do seu negócio para encontrar soluções que melhor funcionam para você, com foco em clareza, autonomia e crescimento. Confira algumas das frentes em que podemos atuar:
+            Aqui, mergulhamos na realidade do seu negócio para encontrar as soluções que mais fazem sentido para você, com foco em clareza, autonomia e crescimento. Confira algumas das frentes em que podemos atuar:
           </p>
         </div>
 
