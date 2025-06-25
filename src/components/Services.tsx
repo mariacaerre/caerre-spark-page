@@ -6,48 +6,46 @@ import { ArrowRight } from "lucide-react";
 const Services = () => {
   const services = [
     {
-      emoji: "✏️",
-      title: "Criação e Otimização de Conteúdo",
+      emoji: "😵‍💫",
+      title: "Quando a sua comunicação não conecta ou falta estratégia de conteúdo...",
+      subtitle: "A gente te ajuda com:",
       items: [
         "Textos estratégicos para blogs, redes sociais, newsletters e sites",
-        "Copywriting, storytelling e SEO com foco em atrair clientes certos",
-        "Roteiros para vídeos, aulas e lançamentos"
+        "Copywriting, storytelling e SEO com foco em atrair as pessoas certas",
+        "Roteiros para vídeos, aulas e lançamentos",
+        "Planejamento de conteúdo com intenção, identidade e direção"
       ]
     },
     {
-      emoji: "💌",
-      title: "CRM e Automação de Marketing",
+      emoji: "⏰",
+      title: "Quando falta tempo ou clareza pra organizar o marketing do seu negócio...",
+      subtitle: "A gente te ajuda com:",
       items: [
         "Criação de jornadas de relacionamento personalizadas",
         "Segmentação inteligente de público e automações sob medida",
-        "Estratégias de nutrição e fidelização de leads com foco em conexão real"
-      ]
-    },
-    {
-      emoji: "📈",
-      title: "Planejamento Estratégico e Mentorias",
-      items: [
-        "Diagnóstico de marca e comunicação",
-        "Posicionamento digital e planejamento de conteúdo",
-        "Mentorias 1:1 para destravar ideias e alinhar direção"
+        "Estratégias de nutrição e fidelização de leads com foco em conexão real",
+        "Otimização de processos com ferramentas simples e eficazes"
       ]
     },
     {
       emoji: "🤖",
-      title: "Inteligência Artificial aplicada ao marketing",
+      title: "Quando você quer usar inteligência artificial, mas não sabe por onde começar...",
+      subtitle: "A gente te ajuda com:",
       items: [
-        "Ensino prático de IA para produção de conteúdo, geração de ideias e automações",
-        "Curadoria de ferramentas úteis para facilitar sua rotina",
-        "Estratégias para ganhar tempo e melhorar resultados com tecnologia"
+        "Ensino prático de IA aplicada à comunicação e ao marketing",
+        "Curadoria de ferramentas que realmente facilitam sua rotina",
+        "Estratégias pra ganhar tempo, destravar ideias e manter a criatividade"
       ]
     },
     {
-      emoji: "🎯",
-      title: "Tráfego Pago e Campanhas",
+      emoji: "📣",
+      title: "Quando você quer atrair mais clientes, mas sem apelar ou se perder no meio do caminho...",
+      subtitle: "A gente te ajuda com:",
       items: [
         "Gestão de campanhas no Google Ads e Meta Ads",
         "Criação de páginas de captura e jornadas que incentivam a ação do público",
-        "Integração com ferramentas de CRM e e-mail marketing"
+        "Integração entre tráfego pago, CRM e e-mail marketing",
+        "Direcionamento estratégico para crescer com consistência e verdade"
       ]
     }
   ];
@@ -65,9 +63,17 @@ const Services = () => {
             </h2>
           </div>
           
-          <p className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto font-ubuntu">
-            Aqui, mergulhamos na realidade do seu negócio para encontrar as soluções que mais fazem sentido para você, com foco em clareza, autonomia e crescimento. Confira algumas das frentes em que podemos atuar:
-          </p>
+          <div className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto font-ubuntu space-y-4">
+            <p>
+              Empreender com propósito é bonito — mas também pode ser solitário, confuso e cansativo.
+            </p>
+            <p>
+              Na Caerre&Co, a gente mergulha na realidade do seu negócio pra te ajudar a descomplicar o que trava e impulsionar o que importa.
+            </p>
+            <p className="font-medium">
+              Aqui estão alguns caminhos em que podemos te apoiar:
+            </p>
+          </div>
         </div>
 
         <div className="grid gap-8 max-w-5xl mx-auto">
@@ -78,9 +84,12 @@ const Services = () => {
                   {service.emoji}
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bebas text-caerre-primary mb-4">
+                  <h3 className="text-xl md:text-2xl font-ubuntu text-gray-800 mb-4 leading-relaxed">
                     {service.title}
                   </h3>
+                  <p className="text-lg font-bebas text-caerre-primary mb-4">
+                    {service.subtitle}
+                  </p>
                   <ul className="space-y-3">
                     {service.items.map((item, itemIndex) => (
                       <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start">
