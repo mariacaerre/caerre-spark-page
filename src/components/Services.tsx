@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -95,7 +96,7 @@ const Services = () => {
                           </div>
                         </AccordionTrigger>
                       </TooltipTrigger>
-                      <TooltipContent>
+                      <TooltipContent className="bg-caerre-primary text-white border-caerre-primary shadow-lg">
                         <p>(Clique para ver como a gente pode ajudar)</p>
                       </TooltipContent>
                     </Tooltip>
