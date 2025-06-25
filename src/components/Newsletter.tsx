@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import { Mail, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Newsletter = () => {
@@ -41,7 +41,7 @@ const Newsletter = () => {
 
         <Card className="p-8 bg-white border-2 border-caerre-primary/20 max-w-2xl mx-auto shadow-lg">
           <p className="text-lg mb-6 text-gray-700">
-            Assine a newsletter da Caerre&Co e receba, uma vez por mês, dicas práticas, ferramentas e reflexões que realmente fazem a diferença no seu negócio.
+            Assine a newsletter da Caerre&Co e receba, uma vez por mês, dicas práticas, ferramentas úteis e reflexões que fazem diferença no seu negócio.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -65,7 +65,7 @@ const Newsletter = () => {
               type="submit" 
               className="bg-caerre-primary hover:bg-caerre-secondary text-white font-semibold w-full py-3 group shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Assinar newsletter
+              Assinar e aprender
               <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </form>

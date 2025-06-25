@@ -15,15 +15,15 @@ const About = () => {
           
           <div className="space-y-6 text-lg md:text-xl text-white leading-relaxed font-ubuntu max-w-4xl mx-auto">
             <p>
-              <span className="font-semibold text-purple-200">Pequenas mudanças, grandes resultados.</span> A Caerre&Co é uma consultoria feita para empreendedores de verdade — que querem se comunicar melhor com quem realmente importa.
+              <span className="font-semibold text-purple-200">Pequenas mudanças, grandes resultados.</span> A Caerre&Co é uma consultoria feita para quem empreende de verdade — e quer se comunicar melhor com quem realmente importa.
             </p>
             
             <p>
-              Tudo com propósito, estratégia e empatia. Sem fórmulas prontas, com direcionamentos que funcionam de verdade.
+              Tudo com propósito, estratégia e empatia. Sem fórmulas prontas — só caminhos que funcionam de verdade.
             </p>
             
             <p className="text-purple-200 font-semibold text-xl md:text-2xl">
-              <span className="font-pacifico">Seja você alguém começando ou já em movimento, aqui é o lugar certo.</span>
+              <span className="font-pacifico">Esteja você começando ou já em movimento, aqui é o seu lugar.</span>
             </p>
           </div>
         </div>
@@ -44,11 +44,11 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg">
-                  É geminiana, mãe de pets e plantas, adora dirigir e tem mais de 10 anos de experiência em conteúdo, CRM, automação e estratégias digitais.
+                  É geminiana, mãe de pets e plantas, apaixonada por dirigir e por tudo que envolve criar, comunicar e planejar.
                 </p>
                 
                 <p className="text-lg">
-                  Inclusive, já atuou com negócios de todos os tamanhos - sempre com escuta ativa, ideias criativas, pensamento estratégico e um olhar humano por trás de cada desafio.
+                  Com mais de 10 anos de experiência em conteúdo, CRM, automação e estratégias digitais, já atuou com negócios de todos os tamanhos — mas foi ajudando pequenos negócios que encontrou seu lugar.
                 </p>
               </div>
             </div>

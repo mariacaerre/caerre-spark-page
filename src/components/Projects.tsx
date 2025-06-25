@@ -8,20 +8,20 @@ const Projects = () => {
     {
       emoji: "💡",
       title: "Caerre Lab",
-      description: "Consultoria online personalizada, prática e estratégica, para te ajudar a posicionar melhor sua marca, comunicar com clareza e aumentar seus resultados.",
-      buttonText: "Quero saber mais"
+      description: "Consultoria online personalizada, prática e estratégica. Para ajudar a posicionar sua marca, comunicar com clareza e aumentar seus resultados.",
+      buttonText: "Quero ajuda personalizada"
     },
     {
       emoji: "📚",
       title: "Caerre Escola",
-      description: "Cursos rápidos e objetivos sobre marketing, inteligência artificial e empreendedorismo — pra aplicar no dia a dia e ver resultado de verdade.",
-      buttonText: "Quero aprender"
+      description: "Cursos rápidos e objetivos sobre marketing, IA e empreendedorismo. Conteúdo direto ao ponto, pra aplicar no dia a dia e ver resultado de verdade.",
+      buttonText: "Quero aprender com autonomia"
     },
     {
       emoji: "🔍",
       title: "Caerreverso",
-      description: "Textos e conteúdos autorais sobre criatividade, estilo de vida e propósito — pra inspirar o lado mais humano de quem empreende.",
-      buttonText: "Quero ler"
+      description: "Textos e conteúdos autorais sobre criatividade, estilo de vida e propósito. Inspiração para o lado mais humano de quem empreende.",
+      buttonText: "Quero refletir e me inspirar"
     }
   ];
 
@@ -39,7 +39,7 @@ const Projects = () => {
           </div>
           
           <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto font-ubuntu">
-            Hoje, oferecemos 3 soluções para impulsionar seu negócio com estratégia, propósito e presença:
+            Temos três caminhos para fortalecer sua marca com mais presença, propósito e direção:
           </p>
         </div>
 

@@ -7,46 +7,53 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 const Services = () => {
   const services = [
     {
-      emoji: "😵‍💫",
-      title: "Quando a sua comunicação não conecta ou falta estratégia de conteúdo...",
-      subtitle: "A gente te ajuda com:",
+      emoji: "✏️",
+      title: "Criação e Otimização de Conteúdo",
+      subtitle: "Pra quem quer se comunicar com consistência e conexão, mas trava na hora de escrever.",
       items: [
-        "Textos estratégicos para blogs, redes sociais, newsletters e sites",
-        "Copywriting, storytelling e SEO com foco em atrair as pessoas certas",
-        "Roteiros para vídeos, aulas e lançamentos",
-        "Planejamento de conteúdo com intenção, identidade e direção"
+        "Textos estratégicos para redes sociais, blogs, sites e newsletters",
+        "Copywriting, storytelling e SEO para atrair as pessoas certas",
+        "Roteiros para vídeos, aulas e lançamentos"
       ]
     },
     {
-      emoji: "⏰",
-      title: "Quando falta tempo ou clareza pra organizar o marketing do seu negócio...",
-      subtitle: "A gente te ajuda com:",
+      emoji: "💌",
+      title: "CRM e Automação de Marketing",
+      subtitle: "Pra quem quer cuidar bem dos contatos e criar vínculo real com o público.",
       items: [
         "Criação de jornadas de relacionamento personalizadas",
-        "Segmentação inteligente de público e automações sob medida",
-        "Estratégias de nutrição e fidelização de leads com foco em conexão real",
-        "Otimização de processos com ferramentas simples e eficazes"
+        "Segmentação inteligente de audiência e automações sob medida",
+        "Estratégias de nutrição e fidelização com foco em conexão"
+      ]
+    },
+    {
+      emoji: "📈",
+      title: "Planejamento Estratégico",
+      subtitle: "Pra quem busca clareza na comunicação e direção nos próximos passos.",
+      items: [
+        "Diagnóstico de marca e comunicação",
+        "Posicionamento digital e planejamento de conteúdo",
+        "Mentorias individuais para tirar ideias do papel e alinhar estratégias"
       ]
     },
     {
       emoji: "🤖",
-      title: "Quando você quer usar inteligência artificial, mas não sabe por onde começar...",
-      subtitle: "A gente te ajuda com:",
+      title: "Inteligência Artificial aplicada ao marketing",
+      subtitle: "Pra quem quer usar a tecnologia a favor da rotina — sem complicar.",
       items: [
-        "Ensino prático de IA aplicada à comunicação e ao marketing",
-        "Curadoria de ferramentas que realmente facilitam sua rotina",
-        "Estratégias pra ganhar tempo, destravar ideias e manter a criatividade"
+        "Ensino prático de IA para criação de conteúdo e automações",
+        "Curadoria de ferramentas úteis para o dia a dia",
+        "Estratégias que economizam tempo e otimizam resultados"
       ]
     },
     {
-      emoji: "📣",
-      title: "Quando você quer atrair mais clientes, mas sem apelar ou se perder no meio do caminho...",
-      subtitle: "A gente te ajuda com:",
+      emoji: "🎯",
+      title: "Tráfego Pago e Campanhas",
+      subtitle: "Pra quem quer ampliar o alcance e conquistar mais clientes com estratégia.",
       items: [
         "Gestão de campanhas no Google Ads e Meta Ads",
-        "Criação de páginas de captura e jornadas que incentivam a ação do público",
-        "Integração entre tráfego pago, CRM e e-mail marketing",
-        "Direcionamento estratégico para crescer com consistência e verdade"
+        "Criação de páginas de captura e jornadas que incentivam a ação",
+        "Integração com ferramentas de CRM e e-mail marketing"
       ]
     }
   ];
@@ -66,13 +73,21 @@ const Services = () => {
           
           <div className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto font-ubuntu space-y-4">
             <p>
-              Empreender com propósito é bonito — mas também pode ser solitário, confuso e cansativo.
+              Se você tem um bom produto ou serviço, mas:
+            </p>
+            <div className="text-lg space-y-2">
+              <p>– tem dificuldade para explicar com clareza o que faz,</p>
+              <p>– sente que está falando para ninguém,</p>
+              <p>– ou se perde em meio a ferramentas, termos e fórmulas...</p>
+            </div>
+            <p className="font-medium">
+              Respira. É normal — e tem solução.
             </p>
             <p>
-              Na Caerre&Co, a gente mergulha na realidade do seu negócio pra te ajudar a descomplicar o que trava e impulsionar o que importa.
+              A proposta aqui é simples: transformar sua comunicação em algo que funciona de verdade — com leveza, estratégia e respeito pelo seu momento, esteja você começando ou já em movimento.
             </p>
-            <p className="font-medium">
-              Aqui estão alguns caminhos em que podemos te apoiar:
+            <p>
+              Nada de fórmulas prontas. Vamos olhar para a sua realidade e construir soluções sob medida, com foco em clareza, autonomia e crescimento sustentável.
             </p>
           </div>
         </div>
@@ -108,7 +123,7 @@ const Services = () => {
                         <ul className="space-y-3">
                           {service.items.map((item, itemIndex) => (
                             <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start">
-                              <span className="text-caerre-accent mr-2 font-bold">•</span>
+                              <span className="text-caerre-accent mr-2 font-bold">–</span>
                               {item}
                             </li>
                           ))}
@@ -124,8 +139,11 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <Button className="bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg">
-            Vamos conversar
+            Vamos bater um papo
           </Button>
+          <p className="text-gray-600 mt-4 text-lg">
+            Pode ser o primeiro passo pra uma comunicação mais leve, eficiente e alinhada com a essência do seu negócio.
+          </p>
         </div>
       </div>
     </section>

@@ -12,13 +12,14 @@ const Header = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bebas mb-8 leading-tight text-white">
-          <span className="font-pacifico text-4xl md:text-5xl lg:text-6xl block mb-4">Você empreende.</span>
-          <span className="text-caerre-light">A gente impulsiona.</span>
+          <span className="font-pacifico text-4xl md:text-5xl lg:text-6xl block mb-4">Seu negócio tem alma.</span>
+          <span className="text-caerre-light">Vamos fazer o mundo sentir isso!</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-caerre-light mb-12 max-w-3xl mx-auto leading-relaxed font-ubuntu">
-          Marketing digital, inteligência artificial e comunicação para quem quer crescer com 
-          <span className="font-semibold text-white"> clareza, estratégia e autenticidade</span>.
+          Ajudamos pequenos negócios e marcas pessoais a se comunicarem com 
+          <span className="font-semibold text-white"> clareza, estratégia e sensibilidade</span> — 
+          mesmo que você esteja começando agora.
         </p>
         
         <Button 

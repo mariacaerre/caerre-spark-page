@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Instagram, Mail, MessageCircle } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 import Logo from "./Logo";
 
 const Footer = () => {
@@ -20,9 +20,17 @@ const Footer = () => {
           </h2>
         </div>
 
-        <p className="text-xl md:text-2xl text-caerre-light mb-12 creative-text">
-          Vamos conversar?
-        </p>
+        <div className="text-xl md:text-2xl text-caerre-light mb-8 space-y-4">
+          <p>
+            Está com dúvidas ou sentindo que precisa de ajuda, mas não sabe por onde começar?
+          </p>
+          <p>
+            Escreve pra gente. Às vezes, uma conversa já clareia muita coisa.
+          </p>
+          <p className="font-medium">
+            Pode ser o primeiro passo para transformar a sua comunicação - e o seu negócio - do jeitinho que você precisa.
+          </p>
+        </div>
 
         <div className="space-y-6 mb-12">
           <div className="flex items-center justify-center space-x-4">
@@ -37,7 +45,7 @@ const Footer = () => {
         </div>
 
         <Button className="bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg">
-          Vamos conversar
+          Quero conversar com vocês
         </Button>
 
         <div className="mt-16 pt-8 border-t border-caerre-secondary/30">
