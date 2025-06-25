@@ -1,7 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const Services = () => {
   const services = [
@@ -77,39 +77,48 @@ const Services = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <Accordion type="multiple" className="w-full space-y-4">
-            {services.map((service, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-0">
-                <Card className="overflow-hidden border-2 border-gray-200 hover:border-caerre-primary/30 transition-all duration-300">
-                  <AccordionTrigger className="px-8 py-6 hover:no-underline [&[data-state=open]>div]:bg-caerre-primary/5">
-                    <div className="flex items-center space-x-6 text-left w-full">
-                      <div className="w-16 h-16 bg-caerre-primary/5 rounded-full flex items-center justify-center text-3xl flex-shrink-0 border border-caerre-primary/10 transition-colors duration-300">
-                        {service.emoji}
+          <TooltipProvider>
+            <Accordion type="multiple" className="w-full space-y-4">
+              {services.map((service, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border-0">
+                  <Card className="overflow-hidden border-2 border-gray-200 hover:border-caerre-primary/30 transition-all duration-300">
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <AccordionTrigger className="px-8 py-6 hover:no-underline [&[data-state=open]>div]:bg-caerre-primary/5">
+                          <div className="flex items-center space-x-6 text-left w-full">
+                            <div className="w-16 h-16 bg-caerre-primary/5 rounded-full flex items-center justify-center text-3xl flex-shrink-0 border border-caerre-primary/10 transition-colors duration-300">
+                              {service.emoji}
+                            </div>
+                            <h3 className="text-lg md:text-xl font-ubuntu text-gray-800 leading-relaxed">
+                              {service.title}
+                            </h3>
+                          </div>
+                        </AccordionTrigger>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>(Clique para ver como a gente pode ajudar)</p>
+                      </TooltipContent>
+                    </Tooltip>
+                    <AccordionContent className="px-8 pb-6">
+                      <div className="ml-22">
+                        <p className="text-lg font-bebas text-caerre-primary mb-4">
+                          {service.subtitle}
+                        </p>
+                        <ul className="space-y-3">
+                          {service.items.map((item, itemIndex) => (
+                            <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start">
+                              <span className="text-caerre-accent mr-2 font-bold">•</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                      <h3 className="text-lg md:text-xl font-ubuntu text-gray-800 leading-relaxed">
-                        {service.title}
-                      </h3>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-8 pb-6">
-                    <div className="ml-22">
-                      <p className="text-lg font-bebas text-caerre-primary mb-4">
-                        {service.subtitle}
-                      </p>
-                      <ul className="space-y-3">
-                        {service.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start">
-                            <span className="text-caerre-accent mr-2 font-bold">•</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </AccordionContent>
-                </Card>
-              </AccordionItem>
-            ))}
-          </Accordion>
+                    </AccordionContent>
+                  </Card>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </TooltipProvider>
         </div>
 
         <div className="text-center mt-12">
