@@ -41,7 +41,7 @@ const Newsletter = () => {
 
         <Card className="p-8 bg-white border-2 border-caerre-primary/20 max-w-2xl mx-auto shadow-lg">
           <p className="text-lg mb-6 text-gray-700">
-            Assine a newsletter da Caerre&Co e receba, uma vez por mês, dicas práticas, ferramentas úteis e reflexões que fazem diferença no seu negócio.
+            Assine de graça a newsletter da Caerre&Co e receba, uma vez por mês, dicas práticas, ferramentas úteis e reflexões que fazem diferença no seu negócio.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">

@@ -15,15 +15,11 @@ const About = () => {
           
           <div className="space-y-6 text-lg md:text-xl text-white leading-relaxed font-ubuntu max-w-4xl mx-auto">
             <p>
-              <span className="font-semibold text-purple-200">Pequenas mudanças, grandes resultados.</span> A Caerre&Co é uma consultoria feita para quem empreende de verdade — e quer se comunicar melhor com quem realmente importa.
+              <span className="font-semibold text-purple-200">Pequenas mudanças, grandes resultados.</span> A Caerre&Co é uma consultoria feita para quem empreende de verdade e quer se comunicar melhor na internet.
             </p>
             
             <p>
-              Tudo com propósito, estratégia e empatia. Sem fórmulas prontas — só caminhos que funcionam de verdade.
-            </p>
-            
-            <p className="text-purple-200 font-semibold text-xl md:text-2xl">
-              <span className="font-pacifico">Esteja você começando ou já em movimento, aqui é o seu lugar.</span>
+              Tudo com propósito, estratégia e empatia. Sem fórmulas prontas — só caminhos que funcionam de verdade. Esteja você começando ou já em movimento, aqui é o seu lugar.
             </p>
           </div>
         </div>
@@ -48,7 +44,7 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg">
-                  Com mais de 10 anos de experiência em conteúdo, CRM, automação e estratégias digitais, já atuou com negócios de todos os tamanhos — mas foi ajudando pequenos negócios que encontrou seu lugar.
+                  Tem mais de 10 anos de experiência em conteúdo, CRM, automação e estratégias digitais.
                 </p>
               </div>
             </div>

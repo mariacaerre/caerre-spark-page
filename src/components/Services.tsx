@@ -7,29 +7,19 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 const Services = () => {
   const services = [
     {
-      emoji: "✏️",
-      title: "Criação e Otimização de Conteúdo",
-      subtitle: "Pra quem quer se comunicar com consistência e conexão, mas trava na hora de escrever.",
+      emoji: "🎯",
+      title: "Pre-ci-sa conquistar mais clientes",
+      serviceTitle: "Tráfego Pago e Campanhas",
       items: [
-        "Textos estratégicos para redes sociais, blogs, sites e newsletters",
-        "Copywriting, storytelling e SEO para atrair as pessoas certas",
-        "Roteiros para vídeos, aulas e lançamentos"
-      ]
-    },
-    {
-      emoji: "💌",
-      title: "CRM e Automação de Marketing",
-      subtitle: "Pra quem quer cuidar bem dos contatos e criar vínculo real com o público.",
-      items: [
-        "Criação de jornadas de relacionamento personalizadas",
-        "Segmentação inteligente de audiência e automações sob medida",
-        "Estratégias de nutrição e fidelização com foco em conexão"
+        "Gestão de campanhas no Google Ads e Meta Ads",
+        "Criação de páginas de captura e jornadas que incentivam a ação",
+        "Integração com ferramentas de CRM e e-mail marketing"
       ]
     },
     {
       emoji: "📈",
-      title: "Planejamento Estratégico",
-      subtitle: "Pra quem busca clareza na comunicação e direção nos próximos passos.",
+      title: "Não tem a menor ideia de como começar",
+      serviceTitle: "Planejamento Estratégico",
       items: [
         "Diagnóstico de marca e comunicação",
         "Posicionamento digital e planejamento de conteúdo",
@@ -37,23 +27,33 @@ const Services = () => {
       ]
     },
     {
+      emoji: "💌",
+      title: "Precisa criar vínculo real com os seus contatos",
+      serviceTitle: "CRM e Automação de Marketing",
+      items: [
+        "Criação de jornadas de relacionamento personalizadas",
+        "Segmentação inteligente de audiência e automações sob medida",
+        "Estratégias de nutrição e fidelização com foco em conexão"
+      ]
+    },
+    {
+      emoji: "✏️",
+      title: "Trava na hora de escrever, mas quer comunicar melhor",
+      serviceTitle: "Criação e Otimização de Conteúdo",
+      items: [
+        "Textos estratégicos para redes sociais, blogs, sites e newsletters",
+        "Copywriting, storytelling e SEO para atrair as pessoas certas",
+        "Roteiros para vídeos, aulas e lançamentos"
+      ]
+    },
+    {
       emoji: "🤖",
-      title: "Inteligência Artificial aplicada ao marketing",
-      subtitle: "Pra quem quer usar a tecnologia a favor da rotina — sem complicar.",
+      title: "Acha IA legal, mas não tem ideia de como usar",
+      serviceTitle: "Inteligência Artificial aplicada ao marketing",
       items: [
         "Ensino prático de IA para criação de conteúdo e automações",
         "Curadoria de ferramentas úteis para o dia a dia",
         "Estratégias que economizam tempo e otimizam resultados"
-      ]
-    },
-    {
-      emoji: "🎯",
-      title: "Tráfego Pago e Campanhas",
-      subtitle: "Pra quem quer ampliar o alcance e conquistar mais clientes com estratégia.",
-      items: [
-        "Gestão de campanhas no Google Ads e Meta Ads",
-        "Criação de páginas de captura e jornadas que incentivam a ação",
-        "Integração com ferramentas de CRM e e-mail marketing"
       ]
     }
   ];
@@ -71,23 +71,18 @@ const Services = () => {
             </h2>
           </div>
           
-          <div className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto font-ubuntu space-y-4">
-            <p>
-              Se você tem um bom produto ou serviço, mas:
-            </p>
-            <div className="text-lg space-y-2">
-              <p>– tem dificuldade para explicar com clareza o que faz,</p>
-              <p>– sente que está falando para ninguém,</p>
-              <p>– ou se perde em meio a ferramentas, termos e fórmulas...</p>
-            </div>
-            <p className="font-medium">
-              Respira. É normal — e tem solução.
+          <div className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto font-ubuntu space-y-6">
+            <p className="font-medium text-caerre-primary">
+              Um bom produto ou serviço, mas invisível para quem precisa.
             </p>
             <p>
-              A proposta aqui é simples: transformar sua comunicação em algo que funciona de verdade — com leveza, estratégia e respeito pelo seu momento, esteja você começando ou já em movimento.
+              Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas - a Caerre&Co é pra você.
             </p>
             <p>
-              Nada de fórmulas prontas. Vamos olhar para a sua realidade e construir soluções sob medida, com foco em clareza, autonomia e crescimento sustentável.
+              A proposta aqui é simples: transformar sua comunicação para trazer resultados de verdade. Nada de fórmulas prontas. Apenas soluções sob medida para seu negócio.
+            </p>
+            <p className="font-medium text-caerre-primary text-2xl">
+              Se você…
             </p>
           </div>
         </div>
@@ -112,13 +107,13 @@ const Services = () => {
                         </AccordionTrigger>
                       </TooltipTrigger>
                       <TooltipContent className="bg-caerre-primary text-white border-caerre-primary shadow-lg">
-                        <p>(Clique para ver como a gente pode ajudar)</p>
+                        <p>(Clique para descobrir o que podemos fazer)</p>
                       </TooltipContent>
                     </Tooltip>
                     <AccordionContent className="px-8 pb-6">
                       <div className="ml-22">
-                        <p className="text-lg font-bebas text-caerre-primary mb-4">
-                          {service.subtitle}
+                        <p className="text-xl font-bebas text-caerre-primary mb-4">
+                          {service.serviceTitle}
                         </p>
                         <ul className="space-y-3">
                           {service.items.map((item, itemIndex) => (
@@ -139,11 +134,8 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <Button className="bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg">
-            Vamos bater um papo
+            Vem que te explicamos mais
           </Button>
-          <p className="text-gray-600 mt-4 text-lg">
-            Pode ser o primeiro passo pra uma comunicação mais leve, eficiente e alinhada com a essência do seu negócio.
-          </p>
         </div>
       </div>
     </section>

@@ -12,8 +12,7 @@ const Header = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bebas mb-8 leading-tight text-white">
-          <span className="font-pacifico text-4xl md:text-5xl lg:text-6xl block mb-4">Seu negócio tem alma.</span>
-          <span className="text-caerre-light">Vamos fazer o mundo sentir isso!</span>
+          <span className="text-caerre-light">Será que o seu cliente te vê do jeito certo?</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-caerre-light mb-12 max-w-3xl mx-auto leading-relaxed font-ubuntu">
