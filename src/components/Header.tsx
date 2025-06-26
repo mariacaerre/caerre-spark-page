@@ -16,9 +16,9 @@ const Header = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-caerre-light mb-12 max-w-3xl mx-auto leading-relaxed font-ubuntu">
-          Ajudamos pequenos negócios e marcas pessoais a se comunicarem com 
+          Ajudamos negócios e marcas pessoais a se comunicarem com 
           <span className="font-semibold text-white"> clareza, estratégia e sensibilidade</span> — 
-          mesmo que você esteja começando agora.
+          esteja você começando agora ou se preparando para novos desafios.
         </p>
         
         <Button 

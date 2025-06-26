@@ -8,7 +8,7 @@ const Services = () => {
   const services = [
     {
       emoji: "🎯",
-      title: "Pre-ci-sa conquistar mais clientes",
+      title: "Precisa conquistar mais clientes",
       serviceTitle: "Tráfego Pago e Campanhas",
       items: [
         "Gestão de campanhas no Google Ads e Meta Ads",
@@ -18,7 +18,7 @@ const Services = () => {
     },
     {
       emoji: "📈",
-      title: "Não tem a menor ideia de como começar",
+      title: "Não tem a menor ideia de por onde começar",
       serviceTitle: "Planejamento Estratégico",
       items: [
         "Diagnóstico de marca e comunicação",
@@ -28,7 +28,7 @@ const Services = () => {
     },
     {
       emoji: "💌",
-      title: "Precisa criar vínculo real com os seus contatos",
+      title: "Quer criar vínculo real com seus contatos",
       serviceTitle: "CRM e Automação de Marketing",
       items: [
         "Criação de jornadas de relacionamento personalizadas",
@@ -48,7 +48,7 @@ const Services = () => {
     },
     {
       emoji: "🤖",
-      title: "Acha IA legal, mas não tem ideia de como usar",
+      title: "Acha IA legal, mas não sabe como usar na prática",
       serviceTitle: "Inteligência Artificial aplicada ao marketing",
       items: [
         "Ensino prático de IA para criação de conteúdo e automações",
@@ -76,10 +76,10 @@ const Services = () => {
               Um bom produto ou serviço, mas invisível para quem precisa.
             </p>
             <p>
-              Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas - a Caerre&Co é pra você.
+              Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas — a Caerre&Co é para você.
             </p>
             <p>
-              A proposta aqui é simples: transformar sua comunicação para trazer resultados de verdade. Nada de fórmulas prontas. Apenas soluções sob medida para seu negócio.
+              A proposta aqui é simples: transformar sua comunicação para gerar resultados de verdade. Nada de fórmulas prontas. Apenas soluções sob medida para o seu negócio.
             </p>
             <p className="font-medium text-caerre-primary text-2xl">
               Se você…

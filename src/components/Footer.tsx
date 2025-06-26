@@ -11,8 +11,8 @@ const Footer = () => {
           <Logo className="w-48 mx-auto mb-8" />
         </div>
 
-        <div className="flex items-center justify-center mb-8">
-          <div className="w-12 h-12 bg-caerre-accent/10 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-accent/20">
+        <div className="flex flex-col items-center justify-center mb-8">
+          <div className="w-12 h-12 bg-caerre-accent/10 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 border border-caerre-accent/20">
             <span className="text-2xl">📱</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bebas text-white">
@@ -20,7 +20,7 @@ const Footer = () => {
           </h2>
         </div>
 
-        <div className="text-xl md:text-2xl text-caerre-light mb-8 space-y-4">
+        <div className="text-lg md:text-xl text-caerre-light mb-8 space-y-4">
           <p>
             Está com dúvidas ou sentindo que precisa de ajuda, mas não sabe por onde começar?
           </p>
@@ -28,7 +28,7 @@ const Footer = () => {
             Escreve pra gente. Às vezes, uma conversa já clareia muita coisa.
           </p>
           <p className="font-medium">
-            Pode ser o primeiro passo para transformar a sua comunicação - e o seu negócio - do jeitinho que você precisa.
+            Pode ser o primeiro passo para transformar a sua comunicação — e o seu negócio — do jeitinho que você precisa.
           </p>
         </div>
 

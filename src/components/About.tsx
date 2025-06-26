@@ -15,7 +15,7 @@ const About = () => {
           
           <div className="space-y-6 text-lg md:text-xl text-white leading-relaxed font-ubuntu max-w-4xl mx-auto">
             <p>
-              <span className="font-semibold text-purple-200">Pequenas mudanças, grandes resultados.</span> A Caerre&Co é uma consultoria feita para quem empreende de verdade e quer se comunicar melhor na internet.
+              A Caerre&Co é uma consultoria feita para quem empreende de verdade e quer se comunicar melhor na internet.
             </p>
             
             <p>
@@ -28,15 +28,18 @@ const About = () => {
         <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-lg p-8 md:p-12 max-w-5xl mx-auto border border-white/20">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h3 className="text-2xl md:text-3xl font-bebas text-white mb-6">
-                Por trás da Caerre&Co
-              </h3>
+              <div className="flex items-center mb-6">
+                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-lg">📦</span>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bebas text-white">
+                  Por trás da Caerre&Co está Maria Caerre
+                </h3>
+              </div>
               
               <div className="space-y-4 text-white leading-relaxed">
                 <p className="text-lg">
-                  Está <span className="font-semibold text-purple-200">Maria Caerre</span> — 
-                  jornalista, especialista em marketing digital e apaixonada por aliar dados, 
-                  sensibilidade e comunicação com propósito.
+                  Jornalista, especialista em marketing digital e apaixonada por aliar dados, sensibilidade e comunicação com propósito.
                 </p>
                 
                 <p className="text-lg">

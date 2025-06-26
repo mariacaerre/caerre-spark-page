@@ -8,13 +8,13 @@ const Projects = () => {
     {
       emoji: "💡",
       title: "Caerre Lab",
-      description: "Consultoria online personalizada, prática e estratégica. Para ajudar a posicionar sua marca, comunicar com clareza e aumentar seus resultados.",
+      description: "Consultoria online personalizada, prática e estratégica. Para posicionar sua marca, comunicar com clareza e aumentar seus resultados.",
       buttonText: "Quero ajuda personalizada"
     },
     {
       emoji: "📚",
       title: "Caerre Escola",
-      description: "Cursos rápidos e objetivos sobre marketing, IA e empreendedorismo. Conteúdo direto ao ponto, pra aplicar no dia a dia e ver resultado de verdade.",
+      description: "Cursos rápidos e objetivos sobre marketing, IA e empreendedorismo. Conteúdo direto ao ponto, para aplicar no dia a dia e ver resultados de verdade.",
       buttonText: "Quero aprender com autonomia"
     },
     {
