@@ -71,17 +71,23 @@ const Services = () => {
             </h2>
           </div>
           
-          <div className="text-xl md:text-2xl text-gray-700 max-w-5xl mx-auto font-ubuntu space-y-6">
-            <p className="font-medium text-caerre-primary">
-              Um bom produto ou serviço, mas invisível para quem precisa.
-            </p>
-            <p>
-              Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas — a Caerre&Co é para você.
-            </p>
-            <p>
-              A proposta aqui é simples: transformar sua comunicação para gerar resultados de verdade. Nada de fórmulas prontas. Apenas soluções sob medida para o seu negócio.
-            </p>
-            <p className="font-medium text-caerre-primary text-2xl">
+          <div className="text-lg md:text-xl text-gray-700 max-w-5xl mx-auto font-ubuntu space-y-4">
+            <div className="bg-gradient-to-r from-caerre-primary/5 to-caerre-accent/5 rounded-2xl p-8 border border-caerre-primary/10">
+              <p className="font-semibold text-caerre-primary text-xl mb-4">
+                Um bom produto ou serviço, mas invisível para quem precisa.
+              </p>
+              
+              <div className="space-y-3 text-base md:text-lg leading-relaxed">
+                <p>
+                  Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas — a Caerre&Co é para você.
+                </p>
+                <p>
+                  A proposta aqui é simples: transformar sua comunicação para gerar resultados de verdade. Nada de fórmulas prontas. Apenas soluções sob medida para o seu negócio.
+                </p>
+              </div>
+            </div>
+            
+            <p className="font-medium text-caerre-primary text-2xl pt-4">
               Se você…
             </p>
           </div>
