@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -59,8 +58,13 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section id="services" className="py-20 px-6 bg-white relative overflow-hidden">
+      {/* Background decorativo */}
+      <div className="absolute inset-0 bg-gradient-to-br from-caerre-primary/3 via-transparent to-caerre-accent/3"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-caerre-primary/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-caerre-accent/5 rounded-full blur-3xl"></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">
             <div className="w-12 h-12 bg-caerre-primary/5 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-primary/10">
@@ -71,25 +75,47 @@ const Services = () => {
             </h2>
           </div>
           
-          <div className="text-lg md:text-xl text-gray-700 max-w-5xl mx-auto font-ubuntu space-y-4">
-            <div className="bg-gradient-to-r from-caerre-primary/5 to-caerre-accent/5 rounded-2xl p-8 border border-caerre-primary/10">
-              <p className="font-semibold text-caerre-primary text-xl mb-4">
-                Um bom produto ou serviço, mas invisível para quem precisa.
-              </p>
-              
-              <div className="space-y-3 text-base md:text-lg leading-relaxed">
-                <p>
-                  Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas — a Caerre&Co é para você.
+          <div className="max-w-5xl mx-auto space-y-8">
+            {/* Primeira frase de impacto */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-caerre-primary/10 to-caerre-accent/10 rounded-3xl blur-xl"></div>
+              <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border-2 border-gradient-to-r from-caerre-primary/20 to-caerre-accent/20 shadow-2xl">
+                <p className="text-2xl md:text-3xl font-bebas text-caerre-primary mb-2 leading-tight">
+                  Um bom produto ou serviço,
                 </p>
-                <p>
-                  A proposta aqui é simples: transformar sua comunicação para gerar resultados de verdade. Nada de fórmulas prontas. Apenas soluções sob medida para o seu negócio.
+                <p className="text-2xl md:text-3xl font-bebas text-caerre-accent leading-tight">
+                  mas invisível para quem precisa.
+                </p>
+              </div>
+            </div>
+
+            {/* Texto explicativo com design mais criativo */}
+            <div className="grid md:grid-cols-2 gap-6 text-left">
+              <div className="bg-gradient-to-br from-caerre-primary/5 to-transparent rounded-2xl p-6 border-l-4 border-caerre-primary">
+                <p className="text-lg leading-relaxed text-gray-700">
+                  Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas — 
+                  <span className="font-semibold text-caerre-primary"> a Caerre&Co é para você.</span>
+                </p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-caerre-accent/5 to-transparent rounded-2xl p-6 border-l-4 border-caerre-accent">
+                <p className="text-lg leading-relaxed text-gray-700">
+                  A proposta aqui é simples: 
+                  <span className="font-semibold text-caerre-accent"> transformar sua comunicação para gerar resultados de verdade.</span> 
+                  Nada de fórmulas prontas. Apenas soluções sob medida para o seu negócio.
                 </p>
               </div>
             </div>
             
-            <p className="font-medium text-caerre-primary text-2xl pt-4">
-              Se você…
-            </p>
+            {/* "Se você..." com destaque especial */}
+            <div className="text-center mt-12">
+              <div className="inline-block relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-caerre-primary to-caerre-accent rounded-full blur opacity-30"></div>
+                <p className="relative bg-white px-8 py-4 rounded-full text-2xl font-bebas text-caerre-primary border-2 border-caerre-primary/20 shadow-lg">
+                  Se você…
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
