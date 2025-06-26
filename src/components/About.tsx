@@ -1,4 +1,3 @@
-
 const About = () => {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800">
@@ -29,9 +28,6 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="order-2 md:order-1">
               <div className="flex items-center mb-6">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-lg">📦</span>
-                </div>
                 <h3 className="text-2xl md:text-3xl font-bebas text-white">
                   Por trás da Caerre&Co está Maria Caerre
                 </h3>
