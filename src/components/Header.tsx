@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-caerre-primary via-caerre-secondary to-caerre-accent flex items-center justify-center px-6 py-20">
+    <section id="header" className="min-h-screen bg-gradient-to-br from-caerre-primary via-caerre-secondary to-caerre-accent flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl text-center animate-fade-in">
         <div className="mb-12">
           <Logo className="w-64 mx-auto mb-8" />

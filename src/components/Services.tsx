@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -66,8 +67,8 @@ const Services = () => {
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <div className="flex items-center justify-center mb-8">
-            <div className="w-12 h-12 bg-caerre-primary/5 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-primary/10">
+          <div className="flex items-center justify-center mb-12">
+            <div className="w-12 h-12 bg-caerre-primary/10 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-primary/20">
               <span className="text-2xl">🛠️</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">
@@ -75,43 +76,58 @@ const Services = () => {
             </h2>
           </div>
           
-          <div className="max-w-5xl mx-auto space-y-8">
-            {/* Primeira frase de impacto */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-caerre-primary/10 to-caerre-accent/10 rounded-3xl blur-xl"></div>
-              <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border-2 border-gradient-to-r from-caerre-primary/20 to-caerre-accent/20 shadow-2xl">
-                <p className="text-2xl md:text-3xl font-bebas text-caerre-primary mb-2 leading-tight">
+          {/* Novo design elegante para o texto introdutório */}
+          <div className="max-w-4xl mx-auto mb-16">
+            {/* Frase de impacto principal */}
+            <div className="relative mb-12">
+              <div className="absolute -inset-4 bg-gradient-to-r from-caerre-primary via-caerre-accent to-caerre-primary opacity-20 blur-xl rounded-full"></div>
+              <div className="relative">
+                <h3 className="text-3xl md:text-4xl font-bebas text-transparent bg-clip-text bg-gradient-to-r from-caerre-primary to-caerre-accent leading-tight mb-4">
                   Um bom produto ou serviço,
-                </p>
-                <p className="text-2xl md:text-3xl font-bebas text-caerre-accent leading-tight">
+                </h3>
+                <h3 className="text-3xl md:text-4xl font-bebas text-gray-600 leading-tight">
                   mas invisível para quem precisa.
-                </p>
+                </h3>
               </div>
             </div>
 
-            {/* Texto explicativo com design mais criativo */}
-            <div className="grid md:grid-cols-2 gap-6 text-left">
-              <div className="bg-gradient-to-br from-caerre-primary/5 to-transparent rounded-2xl p-6 border-l-4 border-caerre-primary">
-                <p className="text-lg leading-relaxed text-gray-700">
-                  Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas — 
-                  <span className="font-semibold text-caerre-primary"> a Caerre&Co é para você.</span>
-                </p>
+            {/* Cards com o texto explicativo */}
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="group relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-caerre-primary/20 to-transparent rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-caerre-primary/10 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="w-12 h-12 bg-caerre-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <span className="text-2xl">💭</span>
+                  </div>
+                  <p className="text-lg leading-relaxed text-gray-700">
+                    Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas —
+                    <span className="font-semibold text-caerre-primary"> a Caerre&Co é para você.</span>
+                  </p>
+                </div>
               </div>
               
-              <div className="bg-gradient-to-br from-caerre-accent/5 to-transparent rounded-2xl p-6 border-l-4 border-caerre-accent">
-                <p className="text-lg leading-relaxed text-gray-700">
-                  A proposta aqui é simples: 
-                  <span className="font-semibold text-caerre-accent"> transformar sua comunicação para gerar resultados de verdade.</span> 
-                  Nada de fórmulas prontas. Apenas soluções sob medida para o seu negócio.
-                </p>
+              <div className="group relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-caerre-accent/20 to-transparent rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-caerre-accent/10 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="w-12 h-12 bg-caerre-accent/10 rounded-full flex items-center justify-center mb-4">
+                    <span className="text-2xl">✨</span>
+                  </div>
+                  <p className="text-lg leading-relaxed text-gray-700">
+                    A proposta aqui é simples: 
+                    <span className="font-semibold text-caerre-accent"> transformar sua comunicação para gerar resultados de verdade.</span> 
+                    Nada de fórmulas prontas. Apenas soluções sob medida para o seu negócio.
+                  </p>
+                </div>
               </div>
             </div>
             
-            {/* "Se você..." com destaque especial */}
-            <div className="text-center mt-12">
-              <div className="inline-block relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-caerre-primary to-caerre-accent rounded-full blur opacity-30"></div>
-                <p className="relative bg-white px-8 py-4 rounded-full text-2xl font-bebas text-caerre-primary border-2 border-caerre-primary/20 shadow-lg">
+            {/* "Se você..." com design especial */}
+            <div className="text-center">
+              <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-caerre-primary/5 to-caerre-accent/5 rounded-full px-8 py-4 border border-caerre-primary/20 backdrop-blur-sm">
+                <div className="w-8 h-8 bg-gradient-to-r from-caerre-primary to-caerre-accent rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">?</span>
+                </div>
+                <p className="text-2xl font-bebas text-caerre-primary">
                   Se você…
                 </p>
               </div>
@@ -124,15 +140,15 @@ const Services = () => {
             <Accordion type="multiple" className="w-full space-y-4">
               {services.map((service, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="border-0">
-                  <Card className="overflow-hidden border-2 border-gray-200 hover:border-caerre-primary/30 transition-all duration-300">
+                  <Card className="overflow-hidden border-2 border-gray-200 hover:border-caerre-primary/30 transition-all duration-300 bg-white">
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <AccordionTrigger className="px-8 py-6 hover:no-underline [&[data-state=open]>div]:bg-caerre-primary/5">
-                          <div className="flex items-center space-x-6 text-left w-full">
-                            <div className="w-16 h-16 bg-caerre-primary/5 rounded-full flex items-center justify-center text-3xl flex-shrink-0 border border-caerre-primary/10 transition-colors duration-300">
+                        <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline [&[data-state=open]>div]:bg-caerre-primary/5">
+                          <div className="flex items-center space-x-4 md:space-x-6 text-left w-full">
+                            <div className="w-12 h-12 md:w-16 md:h-16 bg-caerre-primary/5 rounded-full flex items-center justify-center text-2xl md:text-3xl flex-shrink-0 border border-caerre-primary/10 transition-colors duration-300">
                               {service.emoji}
                             </div>
-                            <h3 className="text-lg md:text-xl font-ubuntu text-gray-800 leading-relaxed">
+                            <h3 className="text-base md:text-lg lg:text-xl font-ubuntu text-gray-800 leading-relaxed">
                               {service.title}
                             </h3>
                           </div>
@@ -142,14 +158,14 @@ const Services = () => {
                         <p>(Clique para descobrir o que podemos fazer)</p>
                       </TooltipContent>
                     </Tooltip>
-                    <AccordionContent className="px-8 pb-6">
-                      <div className="ml-22">
-                        <p className="text-xl font-bebas text-caerre-primary mb-4">
+                    <AccordionContent className="px-6 md:px-8 pb-6">
+                      <div className="ml-16 md:ml-22">
+                        <p className="text-lg md:text-xl font-bebas text-caerre-primary mb-4">
                           {service.serviceTitle}
                         </p>
                         <ul className="space-y-3">
                           {service.items.map((item, itemIndex) => (
-                            <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start">
+                            <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start text-sm md:text-base">
                               <span className="text-caerre-accent mr-2 font-bold">–</span>
                               {item}
                             </li>
