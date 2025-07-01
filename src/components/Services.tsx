@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -72,7 +71,7 @@ const Services = () => {
           </div>
           
           {/* Texto introdutório principal */}
-          <div className="max-w-5xl mx-auto mb-8">
+          <div className="max-w-5xl mx-auto mb-12">
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-200">
               <p className="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
                 <span className="font-semibold text-caerre-primary">Um bom produto ou serviço, mas invisível para quem precisa.</span>
@@ -87,64 +86,67 @@ const Services = () => {
               </p>
             </div>
           </div>
-          
-          {/* Transição para os serviços */}
-          <div className="mb-8">
-            <p className="text-2xl font-bebas text-caerre-primary">
-              Se você…
-            </p>
-          </div>
         </div>
 
+        {/* Grande container para os serviços */}
         <div className="max-w-5xl mx-auto">
-          <TooltipProvider>
-            <Accordion type="multiple" className="w-full space-y-4">
-              {services.map((service, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border-0">
-                  <Card className="overflow-hidden border-2 border-gray-200 hover:border-caerre-primary/30 transition-all duration-300 bg-white">
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline [&[data-state=open]>div]:bg-caerre-primary/5">
-                          <div className="flex items-center space-x-4 md:space-x-6 text-left w-full">
-                            <div className="w-12 h-12 md:w-16 md:h-16 bg-caerre-primary/5 rounded-full flex items-center justify-center text-2xl md:text-3xl flex-shrink-0 border border-caerre-primary/10 transition-colors duration-300">
-                              {service.emoji}
-                            </div>
-                            <h3 className="text-base md:text-lg lg:text-xl font-ubuntu text-gray-800 leading-relaxed">
-                              {service.title}
-                            </h3>
-                          </div>
-                        </AccordionTrigger>
-                      </TooltipTrigger>
-                      <TooltipContent className="bg-caerre-primary text-white border-caerre-primary shadow-lg">
-                        <p>(Clique para descobrir o que podemos fazer)</p>
-                      </TooltipContent>
-                    </Tooltip>
-                    <AccordionContent className="px-6 md:px-8 pb-6">
-                      <div className="ml-16 md:ml-22">
-                        <p className="text-lg md:text-xl font-bebas text-caerre-primary mb-4">
-                          {service.serviceTitle}
-                        </p>
-                        <ul className="space-y-3">
-                          {service.items.map((item, itemIndex) => (
-                            <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start text-sm md:text-base">
-                              <span className="text-caerre-accent mr-2 font-bold">–</span>
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </AccordionContent>
-                  </Card>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </TooltipProvider>
-        </div>
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-200">
+            {/* Transição para os serviços */}
+            <div className="text-center mb-8">
+              <p className="text-2xl font-bebas text-caerre-primary">
+                Se você…
+              </p>
+            </div>
 
-        <div className="text-center mt-12">
-          <Button className="bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg">
-            Vem que te explicamos mais
-          </Button>
+            <TooltipProvider>
+              <Accordion type="multiple" className="w-full space-y-4">
+                {services.map((service, index) => (
+                  <AccordionItem key={index} value={`item-${index}`} className="border-0">
+                    <Card className="overflow-hidden border-2 border-gray-200 hover:border-caerre-primary/30 transition-all duration-300 bg-white">
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline [&[data-state=open]>div]:bg-caerre-primary/5">
+                            <div className="flex items-center space-x-4 md:space-x-6 text-left w-full">
+                              <div className="w-12 h-12 md:w-16 md:h-16 bg-caerre-primary/5 rounded-full flex items-center justify-center text-2xl md:text-3xl flex-shrink-0 border border-caerre-primary/10 transition-colors duration-300">
+                                {service.emoji}
+                              </div>
+                              <h3 className="text-base md:text-lg lg:text-xl font-ubuntu text-gray-800 leading-relaxed">
+                                {service.title}
+                              </h3>
+                            </div>
+                          </AccordionTrigger>
+                        </TooltipTrigger>
+                        <TooltipContent className="bg-caerre-primary text-white border-caerre-primary shadow-lg">
+                          <p>(Clique para descobrir o que podemos fazer)</p>
+                        </TooltipContent>
+                      </Tooltip>
+                      <AccordionContent className="px-6 md:px-8 pb-6">
+                        <div className="ml-16 md:ml-22">
+                          <p className="text-lg md:text-xl font-bebas text-caerre-primary mb-4">
+                            {service.serviceTitle}
+                          </p>
+                          <ul className="space-y-3">
+                            {service.items.map((item, itemIndex) => (
+                              <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start text-sm md:text-base">
+                                <span className="text-caerre-accent mr-2 font-bold">–</span>
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </AccordionContent>
+                    </Card>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </TooltipProvider>
+
+            <div className="text-center mt-12">
+              <Button className="bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg">
+                Vem que te explicamos mais
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
