@@ -71,8 +71,8 @@ const Services = () => {
             </h2>
           </div>
           
-          {/* Texto introdutório simplificado e unificado */}
-          <div className="max-w-4xl mx-auto mb-12">
+          {/* Texto introdutório com largura ajustada */}
+          <div className="max-w-5xl mx-auto mb-12">
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-200">
               <p className="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
                 <span className="font-semibold text-caerre-primary">Um bom produto ou serviço, mas invisível para quem precisa.</span>
