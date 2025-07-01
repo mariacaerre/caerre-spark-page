@@ -71,8 +71,8 @@ const Services = () => {
             </h2>
           </div>
           
-          {/* Texto introdutório com largura ajustada */}
-          <div className="max-w-5xl mx-auto mb-12">
+          {/* Texto introdutório principal */}
+          <div className="max-w-5xl mx-auto mb-8">
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-200">
               <p className="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
                 <span className="font-semibold text-caerre-primary">Um bom produto ou serviço, mas invisível para quem precisa.</span>
@@ -82,16 +82,17 @@ const Services = () => {
                 Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas — <span className="font-semibold text-caerre-primary">a Caerre&Co é para você.</span>
               </p>
               
-              <p className="text-lg md:text-xl leading-relaxed text-gray-700 mb-8">
+              <p className="text-lg md:text-xl leading-relaxed text-gray-700">
                 A proposta aqui é simples: <span className="font-semibold text-caerre-accent">transformar sua comunicação para gerar resultados de verdade.</span> Nada de fórmulas prontas. Apenas soluções sob medida para o seu negócio.
               </p>
-              
-              <div className="text-center">
-                <p className="text-2xl font-bebas text-caerre-primary">
-                  Se você…
-                </p>
-              </div>
             </div>
+          </div>
+          
+          {/* Transição para os serviços */}
+          <div className="mb-8">
+            <p className="text-2xl font-bebas text-caerre-primary">
+              Se você…
+            </p>
           </div>
         </div>
 
