@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -60,7 +61,7 @@ const Services = () => {
   return (
     <section id="services" className="py-20 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-8">
             <div className="w-12 h-12 bg-caerre-primary/10 rounded-full flex items-center justify-center mr-4">
               <span className="text-2xl">🛠️</span>
@@ -71,7 +72,7 @@ const Services = () => {
           </div>
           
           {/* Texto introdutório principal */}
-          <div className="max-w-5xl mx-auto mb-12">
+          <div className="max-w-5xl mx-auto mb-8">
             <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-200">
               <p className="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
                 <span className="font-semibold text-caerre-primary">Um bom produto ou serviço, mas invisível para quem precisa.</span>
@@ -91,8 +92,8 @@ const Services = () => {
         {/* Grande container para os serviços */}
         <div className="max-w-5xl mx-auto">
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-200">
-            {/* Transição para os serviços */}
-            <div className="text-center mb-8">
+            {/* Transição para os serviços - alinhado à esquerda */}
+            <div className="text-left mb-8">
               <p className="text-2xl font-bebas text-caerre-primary">
                 Se você…
               </p>
