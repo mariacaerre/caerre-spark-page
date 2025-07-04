@@ -5,13 +5,13 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="py-20 px-6 bg-caerre-primary text-white">
+    <footer id="footer" className="py-20 px-6 bg-caerre-primary text-white">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
           <Logo className="w-48 mx-auto mb-8" />
         </div>
 
-        <div className="flex flex-col items-center justify-center mb-8">
+        <div id="contact" className="flex flex-col items-center justify-center mb-8">
           <div className="w-12 h-12 bg-caerre-accent/10 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 border border-caerre-accent/20">
             <span className="text-2xl">📱</span>
           </div>

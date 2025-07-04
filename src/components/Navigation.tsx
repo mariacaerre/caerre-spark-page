@@ -13,7 +13,7 @@ const Navigation = () => {
     { name: "Serviços", href: "#services" },
     { name: "Sobre", href: "#about" },
     { name: "Newsletter", href: "#newsletter" },
-    { name: "Contato", href: "#footer" }
+    { name: "Contato", href: "#contact" }
   ];
 
   useEffect(() => {
