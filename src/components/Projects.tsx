@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
@@ -26,7 +25,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white">
+    <section id="projects" className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-8">

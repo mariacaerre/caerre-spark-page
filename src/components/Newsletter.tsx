@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -24,7 +23,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-gray-50">
+    <section id="newsletter" className="py-20 px-6 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex items-center justify-center mb-8">
           <div className="w-12 h-12 bg-caerre-primary/5 backdrop-blur-sm rounded-full flex items-center justify-center mr-4 border border-caerre-primary/10">
