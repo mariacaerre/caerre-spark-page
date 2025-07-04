@@ -37,9 +37,22 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
+    console.log('Tentando navegar para:', href);
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    
+    console.log('Elemento encontrado:', element);
+    
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const yOffset = -80; // Offset para compensar o menu fixo
+      const yPosition = element.offsetTop + yOffset;
+      
+      window.scrollTo({
+        top: yPosition,
+        behavior: 'smooth'
+      });
+    } else {
+      console.error('Elemento não encontrado:', targetId);
     }
     setIsOpen(false);
   };
