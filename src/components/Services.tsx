@@ -73,15 +73,15 @@ const Services = () => {
           
           <div className="max-w-5xl mx-auto mb-6 md:mb-8">
             <div className="bg-white rounded-2xl p-6 md:p-8 lg:p-12 shadow-lg border border-gray-200">
-              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 mb-4 md:mb-6">
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 mb-4 md:mb-6 text-center md:text-left">
                 <span className="font-semibold text-caerre-primary">Um bom produto ou serviço, mas invisível para quem precisa.</span>
               </p>
               
-              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 mb-4 md:mb-6">
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 mb-4 md:mb-6 text-center md:text-left">
                 Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas — <span className="font-semibold text-caerre-primary">a Caerre&Co é para você.</span>
               </p>
               
-              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700">
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 text-center md:text-left">
                 A proposta aqui é simples: <span className="font-semibold text-caerre-accent">transformar sua comunicação para gerar resultados de verdade.</span> Nada de fórmulas prontas. Apenas soluções sob medida para o seu negócio.
               </p>
             </div>
@@ -90,7 +90,7 @@ const Services = () => {
 
         <div className="max-w-5xl mx-auto">
           <div className="bg-white rounded-3xl p-6 md:p-8 lg:p-12 shadow-xl border border-gray-200">
-            <div className="text-left mb-6 md:mb-8">
+            <div className="text-center md:text-left mb-6 md:mb-8">
               <p className="text-xl md:text-2xl font-bebas text-caerre-primary">
                 Se você…
               </p>
@@ -104,11 +104,11 @@ const Services = () => {
                       <Tooltip>
                         <TooltipTrigger asChild>
                           <AccordionTrigger className="px-4 md:px-6 lg:px-8 py-4 md:py-6 hover:no-underline [&[data-state=open]>div]:bg-caerre-primary/5">
-                            <div className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 text-left w-full">
+                            <div className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 text-center md:text-left w-full">
                               <div className="w-10 md:w-12 lg:w-16 h-10 md:h-12 lg:h-16 bg-caerre-primary/5 rounded-full flex items-center justify-center text-xl md:text-2xl lg:text-3xl flex-shrink-0 border border-caerre-primary/10 transition-colors duration-300">
                                 {service.emoji}
                               </div>
-                              <h3 className="text-sm md:text-base lg:text-lg xl:text-xl font-ubuntu text-gray-800 leading-tight md:leading-relaxed">
+                              <h3 className="text-sm md:text-base lg:text-lg xl:text-xl font-ubuntu text-gray-800 leading-tight md:leading-relaxed break-words">
                                 {service.title}
                               </h3>
                             </div>
@@ -119,15 +119,15 @@ const Services = () => {
                         </TooltipContent>
                       </Tooltip>
                       <AccordionContent className="px-4 md:px-6 lg:px-8 pb-4 md:pb-6">
-                        <div className="ml-13 md:ml-16 lg:ml-22">
+                        <div className="ml-0 md:ml-16 lg:ml-22 text-center md:text-left">
                           <p className="text-base md:text-lg lg:text-xl font-bebas text-caerre-primary mb-3 md:mb-4">
                             {service.serviceTitle}
                           </p>
                           <ul className="space-y-2 md:space-y-3">
                             {service.items.map((item, itemIndex) => (
-                              <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start text-xs md:text-sm lg:text-base">
+                              <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start justify-center md:justify-start text-xs md:text-sm lg:text-base">
                                 <span className="text-caerre-accent mr-2 font-bold">–</span>
-                                {item}
+                                <span>{item}</span>
                               </li>
                             ))}
                           </ul>
