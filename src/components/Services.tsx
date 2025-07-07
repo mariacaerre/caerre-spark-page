@@ -59,59 +59,56 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-6 bg-gray-50">
+    <section id="services" className="py-16 md:py-20 px-4 md:px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <div className="flex items-center justify-center mb-8">
-            <div className="w-12 h-12 bg-caerre-primary/10 rounded-full flex items-center justify-center mr-4">
+        <div className="text-center mb-8 md:mb-12">
+          <div className="flex flex-col items-center justify-center mb-6 md:mb-8">
+            <div className="w-12 h-12 bg-caerre-primary/10 rounded-full flex items-center justify-center mb-4">
               <span className="text-2xl">🛠️</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bebas text-caerre-primary">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bebas text-caerre-primary text-center">
               Como funciona na prática
             </h2>
           </div>
           
-          {/* Texto introdutório principal */}
-          <div className="max-w-5xl mx-auto mb-8">
-            <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-gray-200">
-              <p className="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
+          <div className="max-w-5xl mx-auto mb-6 md:mb-8">
+            <div className="bg-white rounded-2xl p-6 md:p-8 lg:p-12 shadow-lg border border-gray-200">
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 mb-4 md:mb-6">
                 <span className="font-semibold text-caerre-primary">Um bom produto ou serviço, mas invisível para quem precisa.</span>
               </p>
               
-              <p className="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700 mb-4 md:mb-6">
                 Se você tem dificuldade para explicar com clareza o que faz, sente que está falando para ninguém, se perde em meio a ferramentas, termos e fórmulas — <span className="font-semibold text-caerre-primary">a Caerre&Co é para você.</span>
               </p>
               
-              <p className="text-lg md:text-xl leading-relaxed text-gray-700">
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-700">
                 A proposta aqui é simples: <span className="font-semibold text-caerre-accent">transformar sua comunicação para gerar resultados de verdade.</span> Nada de fórmulas prontas. Apenas soluções sob medida para o seu negócio.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Grande container para os serviços */}
         <div className="max-w-5xl mx-auto">
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-200">
-            {/* Transição para os serviços - alinhado à esquerda */}
-            <div className="text-left mb-8">
-              <p className="text-2xl font-bebas text-caerre-primary">
+          <div className="bg-white rounded-3xl p-6 md:p-8 lg:p-12 shadow-xl border border-gray-200">
+            <div className="text-left mb-6 md:mb-8">
+              <p className="text-xl md:text-2xl font-bebas text-caerre-primary">
                 Se você…
               </p>
             </div>
 
             <TooltipProvider>
-              <Accordion type="multiple" className="w-full space-y-4">
+              <Accordion type="multiple" className="w-full space-y-3 md:space-y-4">
                 {services.map((service, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="border-0">
                     <Card className="overflow-hidden border-2 border-gray-200 hover:border-caerre-primary/30 transition-all duration-300 bg-white">
                       <Tooltip>
                         <TooltipTrigger asChild>
-                          <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline [&[data-state=open]>div]:bg-caerre-primary/5">
-                            <div className="flex items-center space-x-4 md:space-x-6 text-left w-full">
-                              <div className="w-12 h-12 md:w-16 md:h-16 bg-caerre-primary/5 rounded-full flex items-center justify-center text-2xl md:text-3xl flex-shrink-0 border border-caerre-primary/10 transition-colors duration-300">
+                          <AccordionTrigger className="px-4 md:px-6 lg:px-8 py-4 md:py-6 hover:no-underline [&[data-state=open]>div]:bg-caerre-primary/5">
+                            <div className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 text-left w-full">
+                              <div className="w-10 md:w-12 lg:w-16 h-10 md:h-12 lg:h-16 bg-caerre-primary/5 rounded-full flex items-center justify-center text-xl md:text-2xl lg:text-3xl flex-shrink-0 border border-caerre-primary/10 transition-colors duration-300">
                                 {service.emoji}
                               </div>
-                              <h3 className="text-base md:text-lg lg:text-xl font-ubuntu text-gray-800 leading-relaxed">
+                              <h3 className="text-sm md:text-base lg:text-lg xl:text-xl font-ubuntu text-gray-800 leading-tight md:leading-relaxed">
                                 {service.title}
                               </h3>
                             </div>
@@ -121,14 +118,14 @@ const Services = () => {
                           <p>(Clique para descobrir o que podemos fazer)</p>
                         </TooltipContent>
                       </Tooltip>
-                      <AccordionContent className="px-6 md:px-8 pb-6">
-                        <div className="ml-16 md:ml-22">
-                          <p className="text-lg md:text-xl font-bebas text-caerre-primary mb-4">
+                      <AccordionContent className="px-4 md:px-6 lg:px-8 pb-4 md:pb-6">
+                        <div className="ml-13 md:ml-16 lg:ml-22">
+                          <p className="text-base md:text-lg lg:text-xl font-bebas text-caerre-primary mb-3 md:mb-4">
                             {service.serviceTitle}
                           </p>
-                          <ul className="space-y-3">
+                          <ul className="space-y-2 md:space-y-3">
                             {service.items.map((item, itemIndex) => (
-                              <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start text-sm md:text-base">
+                              <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start text-xs md:text-sm lg:text-base">
                                 <span className="text-caerre-accent mr-2 font-bold">–</span>
                                 {item}
                               </li>
@@ -142,8 +139,8 @@ const Services = () => {
               </Accordion>
             </TooltipProvider>
 
-            <div className="text-center mt-12">
-              <Button className="bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg">
+            <div className="text-center mt-8 md:mt-12">
+              <Button className="bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-4 md:py-6 px-6 md:px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-base md:text-lg w-full sm:w-auto">
                 Vem que te explicamos mais
               </Button>
             </div>

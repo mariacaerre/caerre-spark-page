@@ -93,7 +93,13 @@
   }
 
   body {
-    @apply bg-background text-foreground font-ubuntu;
+    @apply bg-white text-foreground font-ubuntu;
+    /* Cor de fundo branca para evitar flash amarelo */
+  }
+
+  html {
+    @apply bg-white;
+    /* Garantir que o HTML também tenha fundo branco */
   }
 
   h1, h2, h3, h4, h5, h6 {

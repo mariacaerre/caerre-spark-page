@@ -5,22 +5,22 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="py-20 px-6 bg-caerre-primary text-white">
+    <footer id="footer" className="py-16 md:py-20 px-4 md:px-6 bg-caerre-primary text-white">
       <div className="max-w-4xl mx-auto text-center">
-        <div className="mb-8">
-          <Logo className="w-48 mx-auto mb-8" />
+        <div className="mb-6 md:mb-8">
+          <Logo className="w-40 md:w-48 mx-auto mb-6 md:mb-8" />
         </div>
 
-        <div id="contact" className="flex flex-col items-center justify-center mb-8">
+        <div id="contact" className="flex flex-col items-center justify-center mb-6 md:mb-8">
           <div className="w-12 h-12 bg-caerre-accent/10 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 border border-caerre-accent/20">
             <span className="text-2xl">📱</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bebas text-white">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bebas text-white">
             Redes e contato
           </h2>
         </div>
 
-        <div className="text-lg md:text-xl text-caerre-light mb-8 space-y-4">
+        <div className="text-sm md:text-base lg:text-lg text-caerre-light mb-6 md:mb-8 space-y-3 md:space-y-4 max-w-3xl mx-auto leading-relaxed">
           <p>
             Está com dúvidas ou sentindo que precisa de ajuda, mas não sabe por onde começar?
           </p>
@@ -32,24 +32,24 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="space-y-6 mb-12">
-          <div className="flex items-center justify-center space-x-4">
-            <Instagram className="h-6 w-6 text-caerre-accent" />
-            <span className="text-lg font-ubuntu">@caerre.co</span>
+        <div className="space-y-4 md:space-y-6 mb-8 md:mb-12">
+          <div className="flex items-center justify-center space-x-3 md:space-x-4">
+            <Instagram className="h-5 md:h-6 w-5 md:w-6 text-caerre-accent" />
+            <span className="text-base md:text-lg font-ubuntu">@caerre.co</span>
           </div>
           
-          <div className="flex items-center justify-center space-x-4">
-            <Mail className="h-6 w-6 text-caerre-accent" />
-            <span className="text-lg font-ubuntu">contato@caerre.co</span>
+          <div className="flex items-center justify-center space-x-3 md:space-x-4">
+            <Mail className="h-5 md:h-6 w-5 md:w-6 text-caerre-accent" />
+            <span className="text-base md:text-lg font-ubuntu">contato@caerre.co</span>
           </div>
         </div>
 
-        <Button className="bg-caerre-accent hover:bg-caerre-accent/90 text-white font-medium py-6 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg">
+        <Button className="bg-white hover:bg-gray-100 text-caerre-primary hover:text-caerre-primary font-medium py-4 md:py-6 px-6 md:px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-base md:text-lg border-2 border-white w-full sm:w-auto">
           Vamos trocar uma ideia
         </Button>
 
-        <div className="mt-16 pt-8 border-t border-caerre-secondary/30">
-          <p className="text-caerre-light font-ubuntu">
+        <div className="mt-12 md:mt-16 pt-6 md:pt-8 border-t border-caerre-secondary/30">
+          <p className="text-xs md:text-sm text-caerre-light font-ubuntu">
             © 2024 Caerre&Co. Todos os direitos reservados.
           </p>
         </div>
