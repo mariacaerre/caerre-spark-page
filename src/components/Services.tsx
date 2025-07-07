@@ -104,11 +104,11 @@ const Services = () => {
                       <Tooltip>
                         <TooltipTrigger asChild>
                           <AccordionTrigger className="px-4 md:px-6 lg:px-8 py-4 md:py-6 hover:no-underline [&[data-state=open]>div]:bg-caerre-primary/5">
-                            <div className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 text-center md:text-left w-full">
+                            <div className="flex items-center space-x-3 md:space-x-4 lg:space-x-6 text-center md:text-left w-full pr-4">
                               <div className="w-10 md:w-12 lg:w-16 h-10 md:h-12 lg:h-16 bg-caerre-primary/5 rounded-full flex items-center justify-center text-xl md:text-2xl lg:text-3xl flex-shrink-0 border border-caerre-primary/10 transition-colors duration-300">
                                 {service.emoji}
                               </div>
-                              <h3 className="text-sm md:text-base lg:text-lg xl:text-xl font-ubuntu text-gray-800 leading-tight md:leading-relaxed break-words">
+                              <h3 className="text-sm md:text-base lg:text-lg xl:text-xl font-ubuntu text-gray-800 leading-tight md:leading-relaxed break-words flex-1">
                                 {service.title}
                               </h3>
                             </div>
@@ -119,7 +119,7 @@ const Services = () => {
                         </TooltipContent>
                       </Tooltip>
                       <AccordionContent className="px-4 md:px-6 lg:px-8 pb-4 md:pb-6">
-                        <div className="ml-0 md:ml-16 lg:ml-22 text-center md:text-left">
+                        <div className="ml-0 md:ml-20 lg:ml-24 text-center md:text-left">
                           <p className="text-base md:text-lg lg:text-xl font-bebas text-caerre-primary mb-3 md:mb-4">
                             {service.serviceTitle}
                           </p>

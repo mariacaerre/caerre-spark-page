@@ -27,13 +27,13 @@ const About = () => {
         <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-lg p-6 md:p-8 lg:p-12 max-w-5xl mx-auto border border-white/20">
           <div className="grid gap-6 md:gap-8 lg:gap-12 md:grid-cols-2 items-center">
             <div className="order-2 md:order-1">
-              <div className="flex items-center mb-4 md:mb-6">
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-bebas text-white">
+              <div className="flex items-center justify-center md:justify-start mb-4 md:mb-6">
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-bebas text-white text-center md:text-left">
                   Por trás da Caerre&Co está Maria Caerre
                 </h3>
               </div>
               
-              <div className="space-y-3 md:space-y-4 text-white leading-relaxed">
+              <div className="space-y-3 md:space-y-4 text-white leading-relaxed text-center md:text-left">
                 <p className="text-sm md:text-base lg:text-lg">
                   Jornalista, especialista em marketing digital e apaixonada por aliar dados, sensibilidade e comunicação com propósito.
                 </p>
