@@ -37,6 +37,16 @@
 
     --radius: 0.75rem;
 
+    /* Caerre&Co Design System */
+    --caerre-primary: 58 0 136;
+    --caerre-secondary: 80 0 187;
+    --caerre-accent: 101 0 238;
+    --caerre-dark: 36 0 85;
+    --caerre-light: 230 230 230;
+    --caerre-cream: 248 249 250;
+    --caerre-sage: 138 154 91;
+    --caerre-gold: 212 175 55;
+
     --sidebar-background: 255 255 255;
     --sidebar-foreground: 58 0 136;
     --sidebar-primary: 58 0 136;
