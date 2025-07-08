@@ -33,25 +33,15 @@ const Footer = () => {
         </div>
 
         <div className="space-y-4 md:space-y-6 mb-8 md:mb-12">
-          <a 
-            href="https://instagram.com/caerre.co" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center justify-center space-x-3 md:space-x-4 hover:text-caerre-accent transition-colors duration-300 group"
-            aria-label="Visite nosso Instagram"
-          >
-            <Instagram className="h-5 md:h-6 w-5 md:w-6 text-caerre-accent group-hover:scale-110 transition-transform duration-300" />
-            <span className="text-base md:text-lg font-ubuntu group-hover:underline">@caerre.co</span>
-          </a>
+          <div className="flex items-center justify-center space-x-3 md:space-x-4">
+            <Instagram className="h-5 md:h-6 w-5 md:w-6 text-caerre-accent" />
+            <span className="text-base md:text-lg font-ubuntu">@caerre.co</span>
+          </div>
           
-          <a 
-            href="mailto:contato@caerre.co" 
-            className="flex items-center justify-center space-x-3 md:space-x-4 hover:text-caerre-accent transition-colors duration-300 group"
-            aria-label="Envie um email para nós"
-          >
-            <Mail className="h-5 md:h-6 w-5 md:w-6 text-caerre-accent group-hover:scale-110 transition-transform duration-300" />
-            <span className="text-base md:text-lg font-ubuntu group-hover:underline">contato@caerre.co</span>
-          </a>
+          <div className="flex items-center justify-center space-x-3 md:space-x-4">
+            <Mail className="h-5 md:h-6 w-5 md:w-6 text-caerre-accent" />
+            <span className="text-base md:text-lg font-ubuntu">contato@caerre.co</span>
+          </div>
         </div>
 
         <Button className="bg-white hover:bg-gray-100 text-caerre-primary hover:text-caerre-primary font-medium py-4 md:py-6 px-6 md:px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-base md:text-lg border-2 border-white w-full sm:w-auto">

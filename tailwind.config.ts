@@ -63,16 +63,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Paleta oficial da marca Caerre&Co usando semantic tokens
+				// Paleta oficial da marca Caerre&Co
 				caerre: {
-					primary: 'hsl(var(--caerre-primary))',
-					secondary: 'hsl(var(--caerre-secondary))',
-					dark: 'hsl(var(--caerre-dark))',
-					light: 'hsl(var(--caerre-light))',
-					accent: 'hsl(var(--caerre-accent))',
-					cream: 'hsl(var(--caerre-cream))',
-					sage: 'hsl(var(--caerre-sage))',
-					gold: 'hsl(var(--caerre-gold))'
+					primary: '#3a0088',     // Cor principal da marca
+					secondary: '#5000bb',   // Secundária
+					dark: '#240055',        // Tom escuro
+					light: '#e6e6e6',       // Tom claro
+					accent: '#6500ee',      // Accent
+					white: '#FFFFFF',       // Branco do logo
+					cream: '#f8f9fa',       // Cream para backgrounds
+					sage: '#8a9a5b',        // Verde sage
+					gold: '#d4af37'         // Dourado para destaques
 				}
 			},
 			fontFamily: {
